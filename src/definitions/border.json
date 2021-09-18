@@ -1,0 +1,299 @@
+[
+  {
+    "display": "Border",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border",
+    "valuetemplate": "{0} {1} {2}",
+    "categories": ["color", "border"],
+    "tags": "color,  presentation",
+    "controls": [
+      {
+        "type": "range",
+        "label": "Width",
+        "min": "0",
+        "max": "100",
+        "default": "1",
+        "suffix": "px"
+      },
+      {
+        "type": "select",
+        "label": "Pattern",
+        "default": "none",
+        "options": [
+          {
+            "name": "Solid",
+            "value": "solid"
+          },
+          {
+            "name": "Dotted",
+            "value": "dotted"
+          },
+          {
+            "name": "Dashed",
+            "value": "dashed"
+          },
+          {
+            "name": "Double",
+            "value": "double"
+          },
+          {
+            "name": "Groove",
+            "value": "groove"
+          },
+          {
+            "name": "Ridge",
+            "value": "ridge"
+          },
+          {
+            "name": "Inset",
+            "value": "inset"
+          },
+          {
+            "name": "Outset",
+            "value": "outset"
+          },
+          {
+            "name": "Initial",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit",
+            "value": "inherit"
+          },
+
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Hidden",
+            "value": "hidden"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "#000"
+      }
+    ]
+  },
+  {
+    "display": "Border Radius (Custom)",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border-radius",
+    "valuetemplate": "{0}{1}",
+    "categories": ["border"],
+    "tags": " presentation",
+    "controls": [
+      {
+        "type": "range",
+        "label": "Amount",
+        "min": "0",
+        "max": "100",
+        "default": "0px"
+      },
+      {
+        "type": "select",
+        "label": "Unit",
+        "default": "px",
+        "options": [
+          {
+            "name": "Pixels",
+            "value": "px"
+          },
+          {
+            "name": "Percentage",
+            "value": "%"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Color: Border",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border-color",
+    "valuetemplate": "{0}",
+    "categories": ["color", "border"],
+    "tags": "color,  presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Color: Border : Left",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border-left-color",
+    "valuetemplate": "{0}",
+    "categories": ["color", "border"],
+    "tags": "color,  presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Color: Border: Right",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border-right-color",
+    "valuetemplate": "{0}",
+    "categories": ["color", "border"],
+    "tags": "color,  presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Color: Border: Top",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border-top-color",
+    "valuetemplate": "{0}",
+    "categories": ["color", "border"],
+    "tags": "color,  presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Color: Border : Bottom",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border-bottom-color",
+    "valuetemplate": "{0}",
+    "categories": ["color", "border"],
+    "tags": "color,  presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Border : Bottom",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border-bottom",
+    "valuetemplate": "{0}",
+    "categories": ["color", "border"],
+    "tags": "color, presentation",
+    "controls": [
+      {
+        "type": "range",
+        "label": "Width",
+        "min": "0",
+        "max": "100",
+        "default": "1",
+        "suffix": "px"
+      },
+      {
+        "type": "select",
+        "label": "Pattern",
+        "default": "none",
+        "options": [
+          {
+            "name": "Solid",
+            "value": "solid"
+          },
+          {
+            "name": "Dotted",
+            "value": "dotted"
+          },
+          {
+            "name": "Dashed",
+            "value": "dashed"
+          },
+          {
+            "name": "Double",
+            "value": "double"
+          },
+          {
+            "name": "Groove",
+            "value": "groove"
+          },
+          {
+            "name": "Ridge",
+            "value": "ridge"
+          },
+          {
+            "name": "Inset",
+            "value": "inset"
+          },
+          {
+            "name": "Outset",
+            "value": "outset"
+          },
+          {
+            "name": "Initial",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit",
+            "value": "inherit"
+          },
+
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Hidden",
+            "value": "hidden"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "#000"
+      }
+    ]
+  },
+  {
+    "display": "Border Radius (Custom)",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "border-radius",
+    "valuetemplate": "{0}{1}",
+    "categories": ["border"],
+    "tags": "presentation",
+    "controls": [
+      {
+        "type": "range",
+        "label": "Amount",
+        "min": "0",
+        "max": "100",
+        "default": "1"
+      },
+      {
+        "type": "select",
+        "label": "Unit",
+        "default": "px",
+        "options": [
+          {
+            "name": "Pixels",
+            "value": "px"
+          },
+          {
+            "name": "Percentage",
+            "value": "%"
+          }
+        ]
+      }
+    ]
+  }
+]

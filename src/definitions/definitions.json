@@ -1,0 +1,264 @@
+[
+  {
+    "display": "Align Content",
+    "description": "There must be multiple lines of items for this property to have any effect",
+    "propertyName": "align-content",
+    "valuetemplate": "{0}",
+    "categories": ["alignment"],
+    "tags": "alignment,layout,position",
+    "controls": [
+      {
+        "type": "select",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Start",
+            "value": "flex-start"
+          },
+          {
+            "name": "End",
+            "value": "flex-end"
+          },
+          {
+            "name": "Evenly Distributed",
+            "value": "space-between"
+          },
+          {
+            "name": "Evenly Distributed with padding",
+            "value": "space-around"
+          },
+          {
+            "name": "Evenly Distributed with padding both side",
+            "value": "space-evenly"
+          },
+          {
+            "name": "Default",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Align Items",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "align-items",
+    "valuetemplate": "{0}",
+    "categories": ["alignment"],
+    "tags": "alignment,layout,position",
+    "controls": [
+      {
+        "type": "select",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Start",
+            "value": "flex-start"
+          },
+          {
+            "name": "End",
+            "value": "flex-end"
+          },
+          {
+            "name": "Align to baseline of container",
+            "value": "baseline"
+          },
+          {
+            "name": "Default",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Shadow",
+    "description": "Chose shadow property from existing properties",
+    "propertyName": "box-shadow",
+    "valuetemplate": "{0}",
+    "categories": ["box"],
+    "tags": "shadow, presentation",
+    "controls": [
+      {
+        "type": "select",
+        "default": "none",
+        "label": "Position",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Start",
+            "value": "flex-start"
+          },
+          {
+            "name": "End",
+            "value": "flex-end"
+          },
+          {
+            "name": "Align to baseline of container",
+            "value": "baseline"
+          },
+          {
+            "name": "Default",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Shadow (custom)",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "name": "shadow-custom",
+    "propertyName": "box-shadow",
+    "valuetemplate": "{0}px {1}px {2}px {3}px {4} {5}",
+    "categories": ["box"],
+    "tags": "shadow, presentation",
+    "controls": [
+      {
+        "type": "range",
+        "label": "Horizontal Offset"
+      },
+      {
+        "type": "range",
+        "label": "Vertical Offset"
+      },
+      {
+        "type": "range",
+        "label": "Blur"
+      },
+      {
+        "type": "range",
+        "label": "Spread"
+      },
+      {
+        "type": "color",
+        "label": "Color"
+      },
+      {
+        "type": "select",
+        "default": "outset",
+        "label": "Offset",
+        "options": [
+          {
+            "name": "Inset",
+            "value": "inset"
+          },
+          {
+            "name": "Outset",
+            "value": "outset"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Color: Text",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "name": "text-color",
+    "propertyName": "color",
+    "valuetemplate": "{0}",
+    "categories": ["color", "text"],
+    "tags": "color, presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Color: Text Decoration",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "name": "text-color",
+    "propertyName": "text-decoration-color",
+    "valuetemplate": "{0}",
+    "categories": ["color", "text"],
+    "tags": "color, presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Color: Background",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "background-color",
+    "valuetemplate": "{0}",
+    "categories": ["color", "background"],
+    "tags": "color, presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Color: Caret",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "caret-color",
+    "valuetemplate": "{0}",
+    "categories": ["color"],
+    "tags": "color, presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Color: Column Rule",
+    "description": "This property specifies the default alignment for items inside the flexible container",
+    "propertyName": "column-rule-color",
+    "valuetemplate": "{0}",
+    "categories": ["color"],
+    "tags": "color, presentation",
+    "controls": [
+      {
+        "type": "color",
+        "label": "Color",
+        "default": "inherit"
+      }
+    ]
+  }
+]
