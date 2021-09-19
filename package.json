@@ -1,7 +1,7 @@
 {
   "name": "css-builder",
-  "version": "1.0.0",
-  "description": "A simple UI based CSS builder for anyone",
+  "version": "0.0.1",
+  "description": "A UI based CSS code generator for all expert level",
   "author": "koustov",
   "license": "MIT",
   "repository": "koustov/css-builder",
@@ -52,5 +52,13 @@
   ],
   "dependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "keywords": [
+    "css-builder",
+    "react-css-builder",
+    "css-builder-ui",
+    "learn-css-easily",
+    "rapid-css",
+    "css-maker"
+  ]
 }
