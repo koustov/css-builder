@@ -10,10 +10,12 @@ const App = () => {
   return <div className="wrapper">
     <div className="config">
       <div style={{border: "1px solid #cdcdcd", display:"flex", flexDirection:'column', height: '100%'}}>
-        <div style={{padding: "1rem"}}>
-  <h4>Config Area</h4>
+        <div style={{padding: "1rem", height: '100px'}}>
+  <h4>Styling Area</h4>
+  <pre>Currently completed only attributes starts with "a"</pre>
         </div>
-        <div style={{padding: '1rem'}}><CSSBuilder inline onChange={(v) => {setVal(v)}}/></div></div>
+
+        <div style={{padding: '1rem', flex: 1, overflow:"hidden"}}><CSSBuilder inline onChange={(v) => {setVal(v)}}/></div></div>
       </div>
       
   <div className="live-demo">

@@ -1,99 +1,5 @@
 [
   {
-    "display": "Align Content",
-    "description": "There must be multiple lines of items for this property to have any effect",
-    "propertyName": "align-content",
-    "valuetemplate": "{0}",
-    "categories": ["alignment"],
-    "tags": "alignment,layout,position",
-    "controls": [
-      {
-        "type": "select",
-        "options": [
-          {
-            "name": "Stretch",
-            "value": "stretch"
-          },
-          {
-            "name": "Center",
-            "value": "center"
-          },
-          {
-            "name": "Start",
-            "value": "flex-start"
-          },
-          {
-            "name": "End",
-            "value": "flex-end"
-          },
-          {
-            "name": "Evenly Distributed",
-            "value": "space-between"
-          },
-          {
-            "name": "Evenly Distributed with padding",
-            "value": "space-around"
-          },
-          {
-            "name": "Evenly Distributed with padding both side",
-            "value": "space-evenly"
-          },
-          {
-            "name": "Default",
-            "value": "initial"
-          },
-          {
-            "name": "Inherit",
-            "value": "inherit"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "display": "Align Items",
-    "description": "This property specifies the default alignment for items inside the flexible container",
-    "propertyName": "align-items",
-    "valuetemplate": "{0}",
-    "categories": ["alignment"],
-    "tags": "alignment,layout,position",
-    "controls": [
-      {
-        "type": "select",
-        "options": [
-          {
-            "name": "Stretch",
-            "value": "stretch"
-          },
-          {
-            "name": "Center",
-            "value": "center"
-          },
-          {
-            "name": "Start",
-            "value": "flex-start"
-          },
-          {
-            "name": "End",
-            "value": "flex-end"
-          },
-          {
-            "name": "Align to baseline of container",
-            "value": "baseline"
-          },
-          {
-            "name": "Default",
-            "value": "initial"
-          },
-          {
-            "name": "Inherit",
-            "value": "inherit"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "display": "Shadow",
     "description": "Chose shadow property from existing properties",
     "propertyName": "box-shadow",
@@ -148,19 +54,19 @@
     "tags": "shadow, presentation",
     "controls": [
       {
-        "type": "range",
+        "type": "number",
         "label": "Horizontal Offset"
       },
       {
-        "type": "range",
+        "type": "number",
         "label": "Vertical Offset"
       },
       {
-        "type": "range",
+        "type": "number",
         "label": "Blur"
       },
       {
-        "type": "range",
+        "type": "number",
         "label": "Spread"
       },
       {
