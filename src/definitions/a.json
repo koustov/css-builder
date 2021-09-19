@@ -1,0 +1,708 @@
+[
+  {
+    "display": "Set all properties",
+    "description": "Resets all properties (except unicode-bidi and direction)",
+    "link": "https://www.w3schools.com/cssref/css3_pr_all.asp",
+    "propertyName": "all",
+    "valuetemplate": "{0}",
+    "categories": ["alignment"],
+    "tags": "all",
+    "controls": [
+      {
+        "type": "select",
+        "default": "none",
+        "options": [
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          },
+          {
+            "name": "Unset",
+            "value": "unset"
+          },
+          {
+            "name": "None",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Align Content",
+    "description": "Specifies the alignment between the lines inside a flexible container when the items do not use all available space",
+    "link": "https://www.w3schools.com/cssref/css3_pr_align-content.asp",
+    "propertyName": "align-content",
+    "valuetemplate": "{0}",
+    "categories": ["alignment"],
+    "tags": "alignment,layout,position",
+    "controls": [
+      {
+        "type": "select",
+        "default": "stretch",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Start",
+            "value": "flex-start"
+          },
+          {
+            "name": "End",
+            "value": "flex-end"
+          },
+          {
+            "name": "Evenly Distributed",
+            "value": "space-between"
+          },
+          {
+            "name": "Evenly Distributed with padding",
+            "value": "space-around"
+          },
+          {
+            "name": "Evenly Distributed with padding both side",
+            "value": "space-evenly"
+          },
+          {
+            "name": "Default",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Align Items",
+    "description": "Specifies the alignment for items inside a flexible container",
+    "link": "https://www.w3schools.com/cssref/css3_pr_align-items.asp",
+    "propertyName": "align-items",
+    "valuetemplate": "{0}",
+    "categories": ["alignment"],
+    "tags": "alignment,layout,position",
+    "controls": [
+      {
+        "type": "select",
+        "default": "stretch",
+        "options": [
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Start",
+            "value": "flex-start"
+          },
+          {
+            "name": "End",
+            "value": "flex-end"
+          },
+          {
+            "name": "Align to baseline of container",
+            "value": "baseline"
+          },
+          {
+            "name": "Default",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation",
+    "description": "Prepares animation for selected object",
+    "propertyName": "animation",
+    "valuetemplate": "{0} {1} {2} {3} {4} {5} {6} {7}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "description": "Specifies the name of the keyframe you want to bind to the selector",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-name.asp",
+        "default": "",
+        "label": "Animation Name",
+        "valuetemplate": "{0} ",
+        "options": [
+          { "name": "None", "value": "" },
+          { "name": "Initial", "value": "initial" },
+          { "name": "Inherit", "value": "inherit" },
+          {
+            "name": "Custom",
+            "value": {
+              "valuetemplate": "{0}s",
+              "controls": [{ "type": "text", "label": "Custom Name" }]
+            }
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "default": "",
+        "label": "Animation Duration",
+        "description": "Specifies how many seconds or milliseconds an animation takes to complete",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-duration.asp",
+        "valuetemplate": "{0}",
+        "options": [
+          { "name": "initial", "value": "initial" },
+          { "name": "inherit", "value": "inherit" },
+          {
+            "name": "Custom",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "In Seconds",
+                  "valuetemplate": "{0} "
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "default": "ease",
+        "label": "Timing Function",
+        "description": "Specifies the speed curve of the animation",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp",
+        "valuetemplate": "{0}",
+        "options": [
+          { "name": "Consistent Speed", "value": "linear" },
+          { "name": "Slow-Fast-Slow", "value": "ease" },
+          { "name": "Slow start", "value": "ease-in" },
+          { "name": "Slow end", "value": "ease-out" },
+          { "name": "Slow start | Slow end", "value": "ease-in-out" },
+          { "name": "Start step with one", "value": "step-start" },
+          { "name": "End step with one", "value": "step-end" },
+          {
+            "name": "Steps",
+            "valuetemplate": "steps({0},{1})",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Steps"
+                },
+                {
+                  "type": "select",
+                  "label": "Position",
+                  "options": [
+                    { "name": "Start", "value": "start" },
+                    { "name": "End", "value": "end" }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Cube",
+            "valuetemplate": "cubic-bezier({0},{1},{2},{3})",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Step 1",
+                  "min": "0",
+                  "max": "100",
+                  "multiplier": 0.01
+                },
+                {
+                  "type": "number",
+                  "label": "Step 2",
+                  "min": "0",
+                  "max": "100",
+                  "multiplier": 0.01
+                },
+                {
+                  "type": "number",
+                  "label": "Step 3",
+                  "min": "0",
+                  "max": "100",
+                  "multiplier": 0.01
+                },
+                {
+                  "type": "number",
+                  "label": "Step 4",
+                  "min": "0",
+                  "max": "100",
+                  "multiplier": 0.01
+                }
+              ]
+            }
+          },
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" }
+        ]
+      },
+      {
+        "type": "select",
+        "default": "0",
+        "label": "Delay",
+        "description": "Specifies a delay before the animation will start",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-delay.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}s",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Time(secs)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "default": "1",
+        "label": "Animation Repetition",
+        "description": "Specifies how many times an animation should be played",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          { "name": "Infinitely", "value": "infinite" },
+          {
+            "name": "Custom Repeat Count",
+            "valuetemplate": "{0}",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Repeat Count"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "default": "normal",
+        "label": "Direction",
+        "description": "Specifies whether or not the animation should play in reverse on alternate cycles",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-direction.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          { "name": "Normal Direction", "value": "normal" },
+          { "name": "Alternate Direction", "value": "alternate" },
+          {
+            "name": "Alternate Reverse Direction",
+            "value": "alternate-reverse"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "default": "none",
+        "label": "Animation Fill Mode",
+        "description": "Specifies what values are applied by the animation outside the time it is executing",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          { "name": "No fille mode", "value": "none" },
+          { "name": "From last keyframe", "value": "forwards" },
+          { "name": "From first keyframe", "value": "backwards" },
+          {
+            "name": "Both from first and last",
+            "value": "both"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "default": "running",
+        "label": "Play State",
+        "description": "Specifies whether the animation is running or paused",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          { "name": "Paused", "value": "paused" },
+          { "name": "Running", "value": "running" }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Self Align",
+    "description": "Specifies the alignment for selected items inside a flexible container",
+    "propertyName": "align-self",
+    "valuetemplate": "{0}",
+    "categories": ["alignment"],
+    "tags": "alignment,layout,position",
+    "controls": [
+      {
+        "type": "select",
+        "default": "auto",
+        "options": [
+          {
+            "name": "Automatic",
+            "value": "auto"
+          },
+          {
+            "name": "Stretched",
+            "value": "stretch"
+          },
+          {
+            "name": "Centered",
+            "value": "center"
+          },
+          {
+            "name": "Beginning of container",
+            "value": "flex-start"
+          },
+          {
+            "name": "End of container",
+            "value": "flex-end"
+          },
+          {
+            "name": "Baseline of container",
+            "value": "baseline"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation: Delay",
+    "description": "Specifies a delay for the start of an animation",
+    "propertyName": "animation-delay",
+    "valuetemplate": "{0}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation-delay.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "default": "0",
+        "label": "Delay",
+        "description": "Specifies a delay before the animation will start",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-delay.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}s",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Time(secs)"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation: Direction",
+    "description": "Specifies whether an animation should be played forwards, backwards or in alternate cycles",
+    "propertyName": "animation-direction",
+    "valuetemplate": "{0}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation-direction.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "default": "normal",
+        "label": "Direction",
+        "description": "Specifies whether or not the animation should play in reverse on alternate cycles",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-direction.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          { "name": "Normal Direction", "value": "normal" },
+          { "name": "Alternate Direction", "value": "alternate" },
+          {
+            "name": "Alternate Reverse Direction",
+            "value": "alternate-reverse"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation: Duration",
+    "description": "Specifies how long an animation should take to complete one cycle",
+    "propertyName": "animation-duration",
+    "valuetemplate": "{0}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation-duration.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "default": "",
+        "label": "Animation Duration",
+        "description": "Specifies how many seconds or milliseconds an animation takes to complete",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-duration.asp",
+        "valuetemplate": "{0}",
+        "options": [
+          { "name": "initial", "value": "initial" },
+          { "name": "inherit", "value": "inherit" },
+          {
+            "name": "Custom",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "In Seconds",
+                  "valuetemplate": "{0} "
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation: Fill Mode",
+    "description": "Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)",
+    "propertyName": "animation-fill-mode",
+    "valuetemplate": "{0}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "default": "none",
+        "label": "Animation Fill Mode",
+        "description": "Specifies what values are applied by the animation outside the time it is executing",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          { "name": "No fille mode", "value": "none" },
+          { "name": "From last keyframe", "value": "forwards" },
+          { "name": "From first keyframe", "value": "backwards" },
+          {
+            "name": "Both from first and last",
+            "value": "both"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation: Iteration",
+    "description": "Specifies the number of times an animation should be played",
+    "propertyName": "animation-iteration-count",
+    "valuetemplate": "{0}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "default": "1",
+        "label": "Animation Repetition",
+        "description": "Specifies how many times an animation should be played",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          { "name": "Infinitely", "value": "infinite" },
+          {
+            "name": "Custom Repeat Count",
+            "valuetemplate": "{0}",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Repeat Count"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation: Name",
+    "description": "Specifies a name for the @keyframes animation",
+    "propertyName": "animation-name",
+    "valuetemplate": "{0}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation-name.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "description": "Specifies the name of the keyframe you want to bind to the selector",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-name.asp",
+        "default": "",
+        "label": "Animation Name",
+        "valuetemplate": "{0} ",
+        "options": [
+          { "name": "None", "value": "" },
+          { "name": "Initial", "value": "initial" },
+          { "name": "Inherit", "value": "inherit" },
+          {
+            "name": "Custom",
+            "value": {
+              "valuetemplate": "{0}s",
+              "controls": [{ "type": "text", "label": "Custom Name" }]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation: Play State",
+    "description": "Specifies whether the animation is running or paused",
+    "propertyName": "animation-play-state",
+    "valuetemplate": "{0}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "default": "running",
+        "label": "Play State",
+        "description": "Specifies whether the animation is running or paused",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp",
+        "options": [
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" },
+          { "name": "Paused", "value": "paused" },
+          { "name": "Running", "value": "running" }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Animation: Timing Function",
+    "description": "Specifies the speed curve of an animation",
+    "propertyName": "animation-timing-function",
+    "valuetemplate": "{0}",
+    "link": "https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp",
+    "categories": ["animation"],
+    "tags": "animation",
+    "controls": [
+      {
+        "type": "select",
+        "default": "ease",
+        "label": "Timing Function",
+        "description": "Specifies the speed curve of the animation",
+        "link": "https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp",
+        "valuetemplate": "{0}",
+        "options": [
+          { "name": "Consistent Speed", "value": "linear" },
+          { "name": "Slow-Fast-Slow", "value": "ease" },
+          { "name": "Slow start", "value": "ease-in" },
+          { "name": "Slow end", "value": "ease-out" },
+          { "name": "Slow start | Slow end", "value": "ease-in-out" },
+          { "name": "Start step with one", "value": "step-start" },
+          { "name": "End step with one", "value": "step-end" },
+          {
+            "name": "Steps",
+            "valuetemplate": "steps({0},{1})",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Steps"
+                },
+                {
+                  "type": "select",
+                  "label": "Position",
+                  "options": [
+                    { "name": "Start", "value": "start" },
+                    { "name": "End", "value": "end" }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Cube",
+            "valuetemplate": "cubic-bezier({0},{1},{2},{3})",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Step 1",
+                  "min": "0",
+                  "max": "100",
+                  "multiplier": 0.01
+                },
+                {
+                  "type": "number",
+                  "label": "Step 2",
+                  "min": "0",
+                  "max": "100",
+                  "multiplier": 0.01
+                },
+                {
+                  "type": "number",
+                  "label": "Step 3",
+                  "min": "0",
+                  "max": "100",
+                  "multiplier": 0.01
+                },
+                {
+                  "type": "number",
+                  "label": "Step 4",
+                  "min": "0",
+                  "max": "100",
+                  "multiplier": 0.01
+                }
+              ]
+            }
+          },
+          { "name": "Default value", "value": "initial" },
+          { "name": "From parent", "value": "inherit" }
+        ]
+      }
+    ]
+  }
+]

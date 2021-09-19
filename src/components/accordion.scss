@@ -1,0 +1,24 @@
+$button-color: transparent;
+$button-alt-color: #232323;
+$button-border-color: #787878;
+.cb_toolbar_button {
+  padding: 4px 10px;
+  font: 13px 'Montserrat';
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #787878;
+  background-color: $button-color;
+  transition: 0.2s ease-in-out;
+  border: 0;
+  border-bottom: transparent 3px solid;
+  border-radius: 0px;
+  cursor: pointer;
+  &:hover {
+    color: $button-alt-color;
+    background-color: $button-color;
+    border-bottom: $button-border-color 3px solid;
+  }
+}

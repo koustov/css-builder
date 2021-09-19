@@ -105,7 +105,11 @@ export const PropertyBrowser = ({
             <Tabs>
               {Object.keys(sortedProps).map((catkey, cati) => {
                 return (
-                  <Panel title={catkey} className={styles.cb_tab_panel_wrapper}>
+                  <Panel
+                    title={catkey}
+                    className={styles.cb_tab_panel_wrapper}
+                    key={cati}
+                  >
                     <div style={{ overflow: 'auto !important' }}>
                       {Object.keys(sortedProps[catkey]).map((index, indexi) => {
                         return (
@@ -120,6 +124,7 @@ export const PropertyBrowser = ({
                                     style={{ display: 'flex' }}
                                     className={styles.attribute_row}
                                     onClick={() => onRowClicked(c)}
+                                    key={ci}
                                   >
                                     <div style={{ width: '20%' }}>
                                       {c.display}

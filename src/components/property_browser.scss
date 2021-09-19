@@ -67,9 +67,9 @@
     flex-direction: column;
     height: 100%;
     > div {
+      overflow: auto !important;
       > div {
         &:nth-child(2) {
-          overflow: auto !important;
           height: 100%;
         }
       }
