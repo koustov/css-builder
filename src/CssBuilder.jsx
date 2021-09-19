@@ -4,9 +4,9 @@ import { useState, useEffect, Fragment } from 'react'
 import { Templates } from './definitions'
 import { PropertyBrowser } from './components/propertyBrowser'
 import { ControlTemplate } from './components/control-template'
-import styles from './app.scss'
 import './index.css'
 import Accordion from './components/accordion'
+import { CBSimpleButton } from './components/styled'
 
 export const CSSBuilder = ({ tags, onChange, inline, ...rest }) => {
   const [allProps, setAllProps] = useState([])
@@ -75,7 +75,6 @@ export const CSSBuilder = ({ tags, onChange, inline, ...rest }) => {
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <div style={{ overflow: 'auto', flex: 1 }}>
         <Accordion
-          className={styles.cb_accordion}
           selectedIndex={selectedIndex}
           onChange={(index, expanded, si) => setSelectedIndex(si)}
         >
@@ -83,7 +82,6 @@ export const CSSBuilder = ({ tags, onChange, inline, ...rest }) => {
             return (
               <div
                 data-header={`${prop.display || 'No attribute selected'}`}
-                className={styles.cb_accordion_item}
                 help-link={prop.link}
                 on-remove-clicked={() => {
                   allProps.splice(propi, 1)
@@ -115,11 +113,11 @@ export const CSSBuilder = ({ tags, onChange, inline, ...rest }) => {
         </Accordion>
       </div>
       <div style={{ height: '40px' }}>
-        <input
+        <CBSimpleButton
           type='button'
           value='Add'
-          className={styles.cb_simple_button}
           onClick={() => onRowAdd()}
+          style={{ height: '40px' }}
         />
       </div>
       {showPropertyBorwser ? (

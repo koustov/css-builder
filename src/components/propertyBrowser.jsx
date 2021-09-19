@@ -3,10 +3,15 @@ import { useState, useEffect, Fragment } from 'react'
 
 import { Templates } from '../definitions'
 // https://www.w3schools.com/cssref/
-import styles from './property_browser.scss'
 
 import Tabs from './Tabs'
 import Panel from './Panel'
+import {
+  CBModal,
+  CBAttributeRow,
+  CBTabContainer,
+  CBFilterInput
+} from './styled'
 
 export const PropertyBrowser = ({
   selected,
@@ -66,18 +71,14 @@ export const PropertyBrowser = ({
   }
 
   return (
-    <div
-      className={styles.cb_modal}
-      state={show ? '1' : '0'}
-      onClick={() => onClose()}
-    >
+    <CBModal state={show ? '1' : '0'} onClick={() => onClose()}>
       <div
         onClick={(e) => {
           e.stopPropagation()
           e.preventDefault()
         }}
       >
-        <div className={styles.modal_wrapper}>
+        <div>
           <div style={{ display: 'flex', height: '70px' }}>
             <div style={{ flex: 1 }}>
               <h1> CSS Attribute Browser</h1>
@@ -86,13 +87,9 @@ export const PropertyBrowser = ({
               <input type='button' value='close' onClick={() => onClose()} />{' '}
             </div>
           </div>
-          <div
-            className={styles.cb_floating_label_content}
-            style={{ height: '60px' }}
-          >
-            <input
+          <div style={{ height: '60px' }}>
+            <CBFilterInput
               type='text'
-              className={styles.cb_floating_input}
               placeholder='FILTER'
               onChange={(e) => onFilterTextChanged(e.target.value)}
             />
@@ -101,52 +98,51 @@ export const PropertyBrowser = ({
                                   </label> */}
           </div>
 
-          <div style={{ flex: 1 }} className={styles.cb_property_browser_tabs}>
+          <CBTabContainer style={{ flex: 1 }}>
             <Tabs>
-              {Object.keys(sortedProps).map((catkey, cati) => {
-                return (
-                  <Panel
-                    title={catkey}
-                    className={styles.cb_tab_panel_wrapper}
-                    key={cati}
-                  >
-                    <div style={{ overflow: 'auto !important' }}>
-                      {Object.keys(sortedProps[catkey]).map((index, indexi) => {
-                        return (
-                          <div key={indexi}>
-                            <div>
-                              <label>{index}</label>
-                            </div>
-                            <div>
-                              {sortedProps[catkey][index].map((c, ci) => {
-                                return (
-                                  <div
-                                    style={{ display: 'flex' }}
-                                    className={styles.attribute_row}
-                                    onClick={() => onRowClicked(c)}
-                                    key={ci}
-                                  >
-                                    <div style={{ width: '20%' }}>
-                                      {c.display}
-                                    </div>
-                                    <div style={{ flex: 1 }}>
-                                      {c.description}
-                                    </div>
-                                  </div>
-                                )
-                              })}
-                            </div>
-                          </div>
-                        )
-                      })}
-                    </div>
-                  </Panel>
-                )
-              })}
+              {Object.keys(sortedProps)
+                .sort()
+                .map((catkey, cati) => {
+                  return (
+                    <Panel title={catkey} key={cati}>
+                      <div style={{ overflow: 'auto !important' }}>
+                        {Object.keys(sortedProps[catkey])
+                          .sort()
+                          .map((index, indexi) => {
+                            return (
+                              <div key={indexi}>
+                                <div>
+                                  <label>{index}</label>
+                                </div>
+                                <div>
+                                  {sortedProps[catkey][index].map((c, ci) => {
+                                    return (
+                                      <CBAttributeRow
+                                        style={{ display: 'flex' }}
+                                        onClick={() => onRowClicked(c)}
+                                        key={ci}
+                                      >
+                                        <div style={{ width: '20%' }}>
+                                          {c.display}
+                                        </div>
+                                        <div style={{ flex: 1 }}>
+                                          {c.description}
+                                        </div>
+                                      </CBAttributeRow>
+                                    )
+                                  })}
+                                </div>
+                              </div>
+                            )
+                          })}
+                      </div>
+                    </Panel>
+                  )
+                })}
             </Tabs>
-          </div>
+          </CBTabContainer>
         </div>
       </div>
-    </div>
+    </CBModal>
   )
 }

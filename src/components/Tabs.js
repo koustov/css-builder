@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import styles from './tabs.scss'
+import {CBTab, CBTabPanelList} from './styled'
 
 class Tabs extends Component {
   state = {
@@ -15,20 +15,18 @@ class Tabs extends Component {
       <Fragment>
         <ul>
           {this.props.children.map((elem, index) => {
-            let style = index === this.state.selected ? styles.selected : "";
             return (
-              <li
+              <CBTabPanelList
                 key={index}
-                className={[style]}
+                selected= {index === this.state.selected}
                 onClick={() => this.handleChange(index)}
-                style={{textTransform: "capitalize"}}
               >
                 {elem.props.title}
-              </li>
+              </CBTabPanelList>
             );
           })}
         </ul>
-        <div className={styles.tab}>{this.props.children[this.state.selected]}</div>
+        <CBTab>{this.props.children[this.state.selected]}</CBTab>
       </Fragment>
     );
   }

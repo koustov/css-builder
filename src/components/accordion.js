@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './accordion.scss'
+import {CBAccordion, CBToolbarButton, CBToolbarAnchor} from './styled'
 
 class Accordion extends React.Component {
   constructor(props) {
@@ -61,23 +61,23 @@ class Accordion extends React.Component {
       <div key={index} ref={div => { this.nodes[index] = { ref: div } }} className={this.state.index === index ? this.props.openClassName : ''} >
         <div style={{display: 'flex', height: '100%', width: '100%', boxSizing:"border-box"}}>
           <div style={{display:'flex', justifyContent:'center', alignItems: 'center', width: '50px', height: '100%'}}>
-          <div className={styles.cb_hamburger_icon}>
+          <div>
 
           </div>
           </div>
           <div onClick={() => this.toggle(index, true)} style={{flex:1}}>
             {child.props['data-header']}</div>
           <div>
-            <a href={child.props['help-link']} className={styles.cb_toolbar_button} target="_blank">Help</a>
-            <button type="button" className={styles.cb_toolbar_button} onClick={() => child.props['on-change-clicked']()}>Change</button>
-            <button type="button"  className={styles.cb_toolbar_button} onClick={() => child.props['on-remove-clicked']()}>Remove</button>
+            <CBToolbarAnchor href={child.props['help-link']} target="_blank">Help</CBToolbarAnchor>
+            <CBToolbarButton type="button" onClick={() => child.props['on-change-clicked']()}>Change</CBToolbarButton>
+            <CBToolbarButton type="button" onClick={() => child.props['on-remove-clicked']()}>Remove</CBToolbarButton>
           </div>
         </div>
         
         <div style={{ ...style, height: this.getHeight(index) }}>{child}</div>
       </div>
     ))
-    return <div className={this.props.className}>{nodes}</div>
+    return <CBAccordion>{nodes}</CBAccordion>
   }
 }
 
