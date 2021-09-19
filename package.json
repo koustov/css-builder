@@ -1,5 +1,5 @@
 {
-  "name": "css-builder",
+  "name": "react-ui-css-builder",
   "version": "0.0.1",
   "description": "A UI based CSS code generator for all expert level",
   "author": "koustov",
@@ -55,6 +55,7 @@
   },
   "keywords": [
     "css-builder",
+    "react-ui-css-builder",
     "react-css-builder",
     "css-builder-ui",
     "learn-css-easily",

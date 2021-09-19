@@ -1,6 +1,6 @@
 <div align="center">
    <p>
-    <h1>css-builder</h1>
+    <h1>react-ui-css-builder</h1>
   </p>
   <p>
      When we say <i>"CSS for everyone"</i>
@@ -17,12 +17,15 @@
 
 ---
 
-![GitHub watchers](https://img.shields.io/github/watchers/koustov/css-builder.svg?logo=github&label=Watch) ![GitHub watchers](https://img.shields.io/github/issues/koustov/css-builder?logo=github&label=Issues) ![GitHub watchers](https://img.shields.io/github/stars/koustov/css-builder?logo=github&label=Stars) ![GitHub watchers](https://img.shields.io/npm/dt/css-builder.svg?logo=npm&label=downloads)
+![GitHub watchers](https://img.shields.io/github/watchers/koustov/css-builder.svg?logo=github&label=Watch) ![GitHub watchers](https://img.shields.io/github/issues/koustov/css-builder?logo=github&label=Issues) ![GitHub watchers](https://img.shields.io/github/stars/koustov/css-builder?logo=github&label=Stars) ![GitHub watchers](https://img.shields.io/npm/dt/react-ui-css-builder.svg?logo=npm&label=downloads)
 
 This is a **fully flexible** css builder based on [`React`](https://facebook.github.io/react/)
 
-**Note**: The basic infrastructure is created and currently all attributes starting with **"a" been incorporated**. You are welcome to inject more and make it "full-fledged
-Currently its a preview build. 0.1.0 will be the first fully fledged version to use.
+## Note
+
+The basic infrastructure is created and currently all attributes starting with **"a" has been incorporated**.
+You are welcome to inject more and make it "full-fledged" css-builder for **everyone**
+Currently its a preview build and "0.1.0" will be the first fully fledged version to consume.
 
 **Table of Contents**
 
@@ -70,13 +73,13 @@ Visit https://css-builder.vercel.app/
 ### Install 🐙
 
 ```bash
-npm install css-builder
+npm install react-ui-css-builder
 ```
 
 or
 
 ```bash
-yarn add css-builder
+yarn add react-ui-css-builder
 ```
 
 ## Highlight 🔥
@@ -92,7 +95,7 @@ Its a HUUUUUUGE list. Will list down in sometime.
 Import css-builder component
 
 ```jsx
-import { CSSBuilder } from 'css-builder'
+import { CSSBuilder } from 'react-ui-css-builder'
 ```
 
 Just drop it to desired place
