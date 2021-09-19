@@ -3,8 +3,12 @@
     <h1>css-builder</h1>
   </p>
   <p>
-     <i>Build your CSS using UI elemensts.</i>
+     When we say <i>"CSS for everyone"</i>
   </p>
+  <p>
+     Learn | Build | Code | Test
+  </p>
+  <p>A UI based CSS code generator for all expert level</p>
 
   <p>
 
@@ -13,9 +17,12 @@
 
 ---
 
-![GitHub watchers](https://img.shields.io/github/watchers/koustov/react-form-planner.svg?logo=github&label=Watch) ![GitHub watchers](https://img.shields.io/github/issues/koustov/react-form-planner?logo=github&label=Issues) ![GitHub watchers](https://img.shields.io/github/stars/koustov/react-form-planner?logo=github&label=Stars) ![GitHub watchers](https://img.shields.io/npm/dt/react-form-planner.svg?logo=npm&label=downloads)
+![GitHub watchers](https://img.shields.io/github/watchers/koustov/css-builder.svg?logo=github&label=Watch) ![GitHub watchers](https://img.shields.io/github/issues/koustov/css-builder?logo=github&label=Issues) ![GitHub watchers](https://img.shields.io/github/stars/koustov/css-builder?logo=github&label=Stars) ![GitHub watchers](https://img.shields.io/npm/dt/css-builder.svg?logo=npm&label=downloads)
 
-This is a **fully customizable** form builder based on [`React`](https://facebook.github.io/react/)
+This is a **fully flexible** css builder based on [`React`](https://facebook.github.io/react/)
+
+**Note**: The basic infrastructure is created and currently all attributes starting with **"a" been incorporated**. You are welcome to inject more and make it "full-fledged
+Currently its a preview build. 0.1.0 will be the first fully fledged version to use.
 
 **Table of Contents**
 
@@ -25,197 +32,91 @@ This is a **fully customizable** form builder based on [`React`](https://faceboo
 - [Usage](#usage)
   - [Install](#install)
 - [Highlight](#highlight)
-  - [Form Builder](#form-builder)
-  - [How to use](#how-to-use)
-  - [Supported Elements](#supported-elements)
-  - [Form Properties](#form-properties)
-  - [Preview your form](#preview-your-form)
-  - [Form Viewer](#form-viewer)
-  - [How to use](#how-to-use-1)
+- [Supported Elements](#supported-elements)
+- [How to use](#how-to-use)
 - [Playground](#playground)
-- [Screenshots](#screenshots)
 - [Items in queue](#items-in-queue)
 - [Contribution](#contribution)
 - [License](#license)
 
 ## Demo
 
-Visit https://react-form-planner.vercel.app/
+Visit https://css-builder.vercel.app/
 
 ## Features
 
-- JSON based.
-- Redux based.
-- Responsive
+- React based
+- Completely UI based
+- All CSS attributes supported
 - Customizable
 - Quick and easy.
-- Styled component based.
-- Theme supported
-- Full validation support
-- Custom theme
+- Search attribute
+- Categorized attributes
 
 ## When do you need it
 
-- You have complex form to be created?
-- Forms are dynamic in nature?
-- You don't want to manage the form?
-- You need a structured/organised form rendering?
-- You are providing forms as service
+- You want to learn CSS while playing?
+- You want to allow n'th level customization on your web app?
+- You want to code CSS rapidly?
+- Not sure which attribute to chose?
 
 ## Usage
 
-- Simple Form
-- Dynamic Form
-- Quiz
-- Exams
+- Form customization
 - Tutorial
-- Sky is the only limit
+- Learning
+- Rapid building
 
 ### Install 🐙
 
 ```bash
-npm install react-form-planner
+npm install css-builder
 ```
 
 or
 
 ```bash
-yarn add react-form-planner
+yarn add css-builder
 ```
 
 ## Highlight 🔥
 
-This project contains an advanced Form Builder and a Form Viewer.
+It was frustrating for me when iI was looking for some easy tool to build CSS using UI and couldn't find anything that helps me in the context. So built my own.
 
-### Form Builder
+## Supported Elements
 
-- Capable of creating form of any type.
-- Styled component theme support
-- Endlesss Customization
-- Add your own style
-- Add your own properties
+Its a HUUUUUUGE list. Will list down in sometime.
 
 ### How to use
 
-Import FormPlanner component
+Import css-builder component
 
 ```jsx
-import { FormPlanner } from 'react-form-viewer'
+import { CSSBuilder } from 'css-builder'
 ```
 
 Just drop it to desired place
 
 ```jsx
-<FormPlanner
-  onControlValueChanged={() => {
-    console.log('onControlValueChanged')
-  }}
-  onFormValueChanged={() => {
-    console.log('onFormValueChanged')
-  }}
-  theme={dark}
-/>
-```
-
-### Supported Elements
-
-FormPlanner comes with tons of prebuilt elements which are already grouped for convenience. Few of them are visible by default. Rest can be turned on when required
-
-| Group         | Element               | Internal Name | Availability |
-| ------------- | --------------------- | ------------- | ------------ |
-| Basic         | Header                | header        | Default      |
-|               | Medium Header         | mediumheader  | Default      |
-|               | Small Header          | smallheader   | Default      |
-|               | Label                 | label         | Default      |
-| Form Control  | Text Box              | text          | On Demand    |
-|               | Number Box            | number        | On Demand    |
-|               | Multiline Box         | multiline     | On Demand    |
-|               | Checkbox              | checkbox      | On Demand    |
-|               | Radio                 | radio         | On Demand    |
-|               | Select                | select        | On Demand    |
-|               | Color Picker          | color         | On Demand    |
-| Media         | Image                 | image         | On Demand    |
-|               | Video                 | video         | On Demand    |
-|               | PDF                   | pdf           | On Demand    |
-| Quiz          | Question              | question      | On Demand    |
-| Advanced      | Grid                  | grid          | On Demand    |
-|               | Rich Text             | richtext      | On Demand    |
-|               | Multi Values          | multivalue    | On Demand    |
-| Uploads       | Image Upload          | imageupload   | On Demand    |
-|               | Multiple Image Upload | imagesupload  | On Demand    |
-| Miscellaneous | Divider               | divider       | On Demand    |
-
-### Form Properties
-
-Allows to add/update form meta information like
-
-- Title
-- Description
-- Header background image
-- Header background color
-- Background image
-- Background color
-  ![image info](./docs/images/fp.PNG)
-
-### Preview your form
-
-Preview your form while editing
-
-### Form Viewer
-
-This is a full fledged form viewer.
-
-- Capable of rendering complex form layout.
-- Multi line and multi row
-- Theme support
-
-### How to use
-
-Import FormPlanner component
-
-```jsx
-import { FormPlanner } from 'react-form-viewer'
-```
-
-Just drop it to desired place
-
-```jsx
-<FormViewer
+<CSSBuilder
   onChange={(a, b, c) => {
     console.log('Value received')
   }}
-  template={<template_data>}
 />
 ```
 
 ## Playground
 
-Getting built
-
-## Screenshots
-
-Form Planner example
-![image info](./docs/images/ff.PNG)
-
-Edit element on hover
-![image info](./docs/images/edit.PNG)
-
-Edit element
-![image info](./docs/images/editelement.PNG)
-
-Prebuilt Customization
-![image info](./docs/images/custom1.PNG)
-
-Or add your own custmization
-![image info](./docs/images/custom2.PNG)
+Visit https://css-builder.vercel.app/
 
 ## Items in queue
 
-- Localization
+- Pending attributes
+- Drag/drop for sequencing
 
 ## Contribution 🍰
 
-Feel free to create issue and make pull request
+If you understand the importance please feel free to create issue and make pull request
 
 Refer [code of conduct ](./CODE_OF_CONDUCT.md)
 
