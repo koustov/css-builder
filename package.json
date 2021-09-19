@@ -1,6 +1,6 @@
 {
   "name": "react-ui-css-builder",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A UI based CSS code generator for all expert level",
   "author": "koustov",
   "license": "MIT",
@@ -51,7 +51,7 @@
     "dist"
   ],
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "styled-components": "^5.3.1"
   },
   "keywords": [
     "css-builder",

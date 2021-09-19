@@ -1,6 +1,6 @@
 import { useState, useEffect, Fragment } from "react";
 import React from "react";
-import styles from './control-template.scss';
+import {CBGridRow, CBGridCell, CBInput, CBSelect, CBHelpTip} from './styled'
 
 export const ControlTemplate = ({field, onChange}) => {
   const [fieldData, setFieldData] = useState({});
@@ -62,7 +62,7 @@ export const ControlTemplate = ({field, onChange}) => {
       case 'select':
         output.push(
           <div className='cb-floating-label-content' style={{ flex: 1 }}>
-            <select
+            <CBSelect
               className='cb-floating-select'
               value={fieldData.value}
               onChange={(e) =>
@@ -80,7 +80,7 @@ export const ControlTemplate = ({field, onChange}) => {
                   </option>
                 )
               })}
-            </select>
+            </CBSelect>
           </div>
         )
         break
@@ -90,7 +90,7 @@ export const ControlTemplate = ({field, onChange}) => {
             {fieldData.options.map((o, oi) => {
               return (
                 <Fragment key={oi}>
-                  <input
+                  <CBInput
                     type='radio'
                     id={`radio-${o.name}`}
                     name={`radio-${o.name}`}
@@ -111,7 +111,7 @@ export const ControlTemplate = ({field, onChange}) => {
       case 'color':
         output.push(
           <div style={{ flex: 1 }}>
-            <input
+            <CBInput
               type='color'
               id='favcolor'
               name='favcolor'
@@ -134,7 +134,7 @@ export const ControlTemplate = ({field, onChange}) => {
       case 'number':
         output.push (
           <div style={{ flex: 1 }}>
-            <input
+            <CBInput
               type='number'
               id='favcolor'
               name='favcolor'
@@ -151,7 +151,7 @@ export const ControlTemplate = ({field, onChange}) => {
       case 'range':
         output.push(
           <div style={{ flex: 1 }}>
-            <input
+            <CBInput
               type='range'
               min={fieldData.min || '1'}
               max={fieldData.max || '100'}
@@ -170,7 +170,7 @@ export const ControlTemplate = ({field, onChange}) => {
       case 'text':
         output.push (
           <div style={{ flex: 1 }}>
-            <input
+            <CBInput
               type='text'
               id='favcolor'
               name='favcolor'
@@ -185,26 +185,26 @@ export const ControlTemplate = ({field, onChange}) => {
           </div>
         )
     }
-    res = res.concat([<div className={styles.cb_grid_cell}>
+    res = res.concat([<CBGridCell>
       <div style={{ flex: 1, display:'flex' }}><div style={{flex:1}}>{fieldData.label}</div>
       
-      <div className={styles.cb_help_tip}>
+      <CBHelpTip>
         <p>{fieldData.description}<br />
         <span style={{fontWeight: '500'}}>Default: </span>{fieldData.default}<br />
 	      <a  href={fieldData.link || 'https://www.w3schools.com/cssref/'} target="_blank">W3School Definition</a>
     </p>
-</div>
+</CBHelpTip>
       </div>
       <div>{output}</div>
-    </div>])
+    </CBGridCell>])
     res  = res.concat(getSubControls())
     return res
   }
 
   const allcontrols = getControl()
   return (
-    <div className={styles.cb_grid_row} style={{gridTemplateColumns: `repeat(${allcontrols.length}, 1fr)`}}>
+    <CBGridRow style={{gridTemplateColumns: `repeat(${allcontrols.length}, 1fr)`}}>
       {getControl()}
-    </div>
+    </CBGridRow>
   )
 }
