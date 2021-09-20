@@ -55,6 +55,10 @@ Visit https://css-builder.vercel.app/
 - Quick and easy.
 - Search attribute
 - Categorized attributes
+- Theme supported
+  - Out of the box there are two themes
+    - chalk (default)
+    - dark
 
 ## When do you need it
 

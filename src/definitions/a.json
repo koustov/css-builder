@@ -44,6 +44,7 @@
       {
         "type": "select",
         "default": "stretch",
+        "label": "Alignment",
         "options": [
           {
             "name": "Stretch",
@@ -96,6 +97,7 @@
     "controls": [
       {
         "type": "select",
+        "label": "Alignment",
         "default": "stretch",
         "options": [
           {
