@@ -20,27 +20,30 @@ export const CBSimpleButton = styled.input`
   letter-spacing: 0.5em;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  border: 1px solid #454545;
+  border: 1px solid ${({ theme }) => theme.colors.button.borderColor};
+  color: ${({ theme }) => theme.colors.color};
   &:hover {
     letter-spacing: 0.8em;
-    border-left: 10px solid #454545;
+    border-left: 10px solid ${({ theme }) => theme.colors.button.borderColor};
   }
 `
 
 export const CBAccordion = styled.div`
+  color: ${({ theme }) => theme.colors.color};
   > div > div:first-of-type {
     padding: 1em;
-    color: #454545;
+    color: ${({ theme }) => theme.colors.color};
     text-transform: uppercase;
     user-select: none;
     font-weight: 200;
     cursor: pointer;
-    border: 1px solid #cdcdcd;
+    background-color: ${({ theme }) => theme.colors.background};
+    border: 1px solid ${({ theme }) => theme.colors.accordion.border};
   }
   > div > div:last-of-type {
-    background-color: #f9f9f9;
+    background-color: ${({ theme }) => theme.colors.accordion.background};
     margin: 0 0.5em;
-    box-shadow: 0 0 20px 2px #cdcdcd;
+    box-shadow: 0 0 20px 2px ${({ theme }) => theme.colors.accordion.shadow};
   }
   .cb_accordion_item {
     padding: 1em;
@@ -70,7 +73,8 @@ export const CBToolbarButton = styled.button`
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: #787878;
+  opacity: 0.5;
+  color: ${({ theme }) => theme.colors.color};
   background-color: transparent;
   transition: 0.2s ease-in-out;
   border: 0;
@@ -78,9 +82,9 @@ export const CBToolbarButton = styled.button`
   border-radius: 0px;
   cursor: pointer;
   &:hover {
-    color: #232323;
+    opacity: 1;
     background-color: transparent;
-    border-bottom: #787878 3px solid;
+    border-bottom: ${({ theme }) => theme.colors.color} 3px solid;
   }
 `
 export const CBToolbarAnchor = styled.a`
@@ -91,7 +95,8 @@ export const CBToolbarAnchor = styled.a`
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: #787878;
+  opacity: 0.5;
+  color: ${({ theme }) => theme.colors.color};
   background-color: transparent;
   transition: 0.2s ease-in-out;
   border: 0;
@@ -99,22 +104,23 @@ export const CBToolbarAnchor = styled.a`
   border-radius: 0px;
   cursor: pointer;
   &:hover {
-    color: #232323;
+    opacity: 1;
     background-color: transparent;
-    border-bottom: #787878 3px solid;
+    border-bottom: ${({ theme }) => theme.colors.color} 3px solid;
   }
 `
 
 export const CBGridRow = styled.div`
   display: grid;
   width: 100%;
+  color: ${({ theme }) => theme.colors.color};
 `
 
 export const CBGridCell = styled.div`
   width: 100%;
   margin-bottom: 1rem;
   > div {
-    border: 1px solid #cdcdcd;
+    border: 1px solid ${({ theme }) => theme.colors.border};
     width: 100%;
     height: 30px;
     display: flex;
@@ -123,11 +129,11 @@ export const CBGridCell = styled.div`
     box-sizing: border-box;
     &:nth-child(2) {
       &:hover {
-        border-color: #454545;
+        border-color: ${({ theme }) => theme.colors.borderDark};
       }
     }
     &:nth-child(1) {
-      border-left: 10px solid #cdcdcd;
+      border-left: 10px solid ${({ theme }) => theme.colors.border};
       font-weight: 500;
     }
 
@@ -153,7 +159,7 @@ export const CBSelect = styled.select`
 export const CBHelpTip = styled.div`
   margin: auto;
   text-align: center;
-  border: 2px solid #cdcdcd;
+  border: 2px solid ${({ theme }) => theme.colors.border};
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -166,7 +172,7 @@ export const CBHelpTip = styled.div`
     font-family: sans-serif;
     font-weight: 700;
     font-size: 15px;
-    color: #067df7;
+    color: ${({ theme }) => theme.colors.highlight};
   }
 
   &:hover p {
@@ -183,7 +189,7 @@ export const CBHelpTip = styled.div`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-align: center;
-    background-color: #ffffff;
+    background-color: ${({ theme }) => theme.colors.background};
     padding: 12px 16px;
     z-index: 999999;
     width: 178px;
@@ -194,12 +200,12 @@ export const CBHelpTip = styled.div`
     border-radius: 3px;
     /* 	border: 1px solid #E0E0E0; */
     box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
-    color: #37393d;
+    color: ${({ theme }) => theme.colors.color};
     font-size: 12px;
     line-height: 18px;
     z-index: 99;
     a {
-      color: #067df7;
+      color: ${({ theme }) => theme.colors.highlight};
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -211,7 +217,7 @@ export const CBHelpTip = styled.div`
       width: 0;
       height: 0;
       border: 10px solid transparent;
-      border-bottom-color: #ffffff;
+      border-bottom-color: ${({ theme }) => theme.colors.border};
       top: -9px;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -249,8 +255,8 @@ export const CBModal = styled.div`
     box-sizing: border-box;
   }
   > div {
-    background: #fff;
-    border: 2px solid #787878;
+    background: ${({ theme }) => theme.colors.background};
+    border: 2px solid ${({ theme }) => theme.colors.border};
     width: 90%;
     height: 80%;
     border-radius: 8px;
@@ -272,8 +278,8 @@ export const CBAttributeRow = styled.div`
   height: 40px;
   padding: 0px 1rem;
   &:hover {
-    border-color: #5d33b2;
-    background-color: #efefef;
+    border-color: ${({ theme }) => theme.colors.highlight};
+    background-color: ${({ theme }) => theme.colors.background};
   }
   > div {
     display: flex;
@@ -285,7 +291,7 @@ export const CBTabContainer = styled.div`
   ul {
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #cdcdcd;
+    border-right: 1px solid ${({ theme }) => theme.colors.border};
     padding: 0 1rem 0rem 0;
   }
   > div {
@@ -310,8 +316,8 @@ export const CBFilterInput = styled.input`
   width: 100%;
   height: 36px;
   padding: 0 20px;
-  background: #fff;
-  color: #323840;
+  background: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.color};
   border: 1px solid #3d85d8;
   border-radius: 4px;
   box-sizing: border-box;
@@ -328,7 +334,7 @@ export const CBTab = styled.div`
   width: 100%;
   padding: 25px;
   font-family: sans-serif;
-  color: #444;
+  color: ${({ theme }) => theme.colors.color};
   ul.inline {
     list-style: none;
     padding: 0;
@@ -345,13 +351,15 @@ export const CBTabPanelList = styled.li`
   display: inline-block;
   margin-left: 0;
   padding: 10px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid ${({ theme }) => theme.colors.border};
   transition: all 0.5s;
   font-family: Lato, sans-serif;
   font-weight: 300;
   cursor: pointer;
   text-transform: capitalize;
-  color: ${(props) => (props.selected ? '#444' : '#aaa')};
+  color: ${({ theme }) => theme.colors.color};
+  opacity: ${(props) => (props.selected ? '1' : '0.5')};
   border-right: 4px solid
-    ${(props) => (props.selected ? '#337ab7' : 'transparent')};
+    ${(props) =>
+      props.selected ? props.theme.colors.highlight : 'transparent'};
 `

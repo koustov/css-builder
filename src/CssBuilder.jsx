@@ -7,12 +7,32 @@ import { ControlTemplate } from './components/control-template'
 import './index.css'
 import Accordion from './components/accordion'
 import { CBSimpleButton } from './components/styled'
+import { ThemeProvider } from 'styled-components'
+import * as Themes from './themes'
 
-export const CSSBuilder = ({ tags, onChange, inline, ...rest }) => {
+export const CSSBuilder = ({
+  tags,
+  onChange,
+  inline,
+  baseTheme = 'chalk',
+  themeOverride = {},
+  config,
+  ...rest
+}) => {
   const [allProps, setAllProps] = useState([])
   const [showPropertyBorwser, setShowPropertyBorwser] = useState(false)
   const [selectedProperty, setSelectedProperty] = useState(-1)
   const [selectedIndex, setSelectedIndex] = useState(-1)
+  const [finalTheme, setFinalTheme] = React.useState({})
+  const [loading, setLoading] = React.useState(true)
+
+  useEffect(() => {
+    let defaultTheme = Themes[baseTheme]
+    const oTheme = themeOverride
+    defaultTheme = Object.assign(defaultTheme, oTheme)
+    setFinalTheme(defaultTheme)
+    setLoading(false)
+  }, [config])
 
   const onRowAdd = () => {
     setSelectedProperty(allProps.length)
@@ -72,61 +92,69 @@ export const CSSBuilder = ({ tags, onChange, inline, ...rest }) => {
   }
 
   return (
-    <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ overflow: 'auto', flex: 1 }}>
-        <Accordion
-          selectedIndex={selectedIndex}
-          onChange={(index, expanded, si) => setSelectedIndex(si)}
-        >
-          {allProps.map((prop, propi) => {
-            return (
-              <div
-                data-header={`${prop.display || 'No attribute selected'}`}
-                help-link={prop.link}
-                on-remove-clicked={() => {
-                  allProps.splice(propi, 1)
-                  setAllProps(JSON.parse(JSON.stringify(allProps)))
-                  fireOnChange(allProps)
-                }}
-                on-change-clicked={() => {
-                  setSelectedProperty(propi)
-                  setShowPropertyBorwser(true)
-                }}
+    <Fragment>
+      {loading ? null : (
+        <ThemeProvider theme={finalTheme}>
+          <div
+            style={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+          >
+            <div style={{ overflow: 'auto', flex: 1 }}>
+              <Accordion
+                selectedIndex={selectedIndex}
+                onChange={(index, expanded, si) => setSelectedIndex(si)}
               >
-                {prop.controls.map((c, ci) => {
+                {allProps.map((prop, propi) => {
                   return (
-                    <div style={{ flex: 1 }} key={ci}>
-                      <div style={{ display: 'flex' }}>
-                        <ControlTemplate
-                          field={c}
-                          onChange={(val) => {
-                            onPropertyValueChange(val, ci, propi)
-                          }}
-                        />
-                      </div>
+                    <div
+                      data-header={`${prop.display || 'No attribute selected'}`}
+                      help-link={prop.link}
+                      on-remove-clicked={() => {
+                        allProps.splice(propi, 1)
+                        setAllProps(JSON.parse(JSON.stringify(allProps)))
+                        fireOnChange(allProps)
+                      }}
+                      on-change-clicked={() => {
+                        setSelectedProperty(propi)
+                        setShowPropertyBorwser(true)
+                      }}
+                    >
+                      {prop.controls.map((c, ci) => {
+                        return (
+                          <div style={{ flex: 1 }} key={ci}>
+                            <div style={{ display: 'flex' }}>
+                              <ControlTemplate
+                                field={c}
+                                onChange={(val) => {
+                                  onPropertyValueChange(val, ci, propi)
+                                }}
+                              />
+                            </div>
+                          </div>
+                        )
+                      })}
                     </div>
                   )
                 })}
-              </div>
-            )
-          })}
-        </Accordion>
-      </div>
-      <div style={{ height: '40px' }}>
-        <CBSimpleButton
-          type='button'
-          value='Add'
-          onClick={() => onRowAdd()}
-          style={{ height: '40px' }}
-        />
-      </div>
-      {showPropertyBorwser ? (
-        <PropertyBrowser
-          show={showPropertyBorwser}
-          onChange={(val) => onPropertyChange(val)}
-          onClose={() => setShowPropertyBorwser(false)}
-        />
-      ) : null}
-    </div>
+              </Accordion>
+            </div>
+            <div style={{ height: '40px' }}>
+              <CBSimpleButton
+                type='button'
+                value='Add'
+                onClick={() => onRowAdd()}
+                style={{ height: '40px' }}
+              />
+            </div>
+            {showPropertyBorwser ? (
+              <PropertyBrowser
+                show={showPropertyBorwser}
+                onChange={(val) => onPropertyChange(val)}
+                onClose={() => setShowPropertyBorwser(false)}
+              />
+            ) : null}
+          </div>
+        </ThemeProvider>
+      )}
+    </Fragment>
   )
 }
