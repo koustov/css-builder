@@ -36,7 +36,7 @@
   {
     "display": "Display",
     "link": "https://www.w3schools.com/cssref/pr_class_display.asp",
-    "description": "Specifies how a certain HTML element should be displayed",
+    "description": "Specifies how an element should be displayed",
     "propertyName": "display",
     "valuetemplate": "{0}",
     "categories": ["container"],
