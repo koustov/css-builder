@@ -14,9 +14,9 @@ const App = () => {
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
-        <li><a href="https://www.npmjs.com/package/react-ui-css-builder" target="_blank" class="link link-theme link-arrow">NPM</a></li>
-        <li><a href="https://github.com/koustov/css-builder" target="_blank" class="link link-theme link-arrow">Git</a></li>
-        <li><a href="https://github.com/koustov/css-builder" target="_blank" class="link link-theme link-arrow">Star</a></li>
+        <li><a href="https://www.npmjs.com/package/react-ui-css-builder" without rel="noopener noreferrer" target="_blank" class="link link-theme link-arrow">NPM</a></li>
+        <li><a href="https://github.com/koustov/css-builder" without rel="noopener noreferrer" target="_blank" class="link link-theme link-arrow">Git</a></li>
+        <li><a href="https://github.com/koustov/css-builder" without rel="noopener noreferrer" target="_blank" class="link link-theme link-arrow">Star</a></li>
       </ul>
     </div>
 
