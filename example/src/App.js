@@ -32,10 +32,10 @@ const App = () => {
         <div style={{padding: '1rem', flex: 1, overflow:"hidden"}}><CSSBuilder inline onChange={(v) => {setVal(v)}}/></div></div>
       </div>
       
-  <div className="live-demo">
-  <div style={{border: "1px solid #cdcdcd", display:"flex", flexDirection:'column', height: '100%'}}>
-  <div style={{padding: "1rem"}}>
-  <h4>Rendering Area</h4>
+    <div className="live-demo">
+    <div style={{border: "1px solid #cdcdcd", display:"flex", flexDirection:'column', height: '100%'}}>
+    <div style={{padding: "1rem"}}>
+    <h4>Rendering Area</h4>
         </div>
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '1rem'}}>
            <pre>
