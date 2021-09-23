@@ -1,0 +1,142 @@
+[
+  {
+    "display": "Direction",
+    "description": "Specifies the text direction/writing direction",
+    "link": "https://www.w3schools.com/cssref/pr_text_direction.asp",
+    "propertyName": "direction",
+    "valuetemplate": "{0}",
+    "categories": ["container", "text"],
+    "tags": "container,text",
+    "controls": [
+      {
+        "type": "select",
+        "default": "ltr",
+        "options": [
+          {
+            "name": "ltr",
+            "value": "Left to right"
+          },
+          {
+            "name": "rtl",
+            "value": "Right to left"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "display": "Display",
+    "link": "https://www.w3schools.com/cssref/pr_class_display.asp",
+    "description": "Specifies how a certain HTML element should be displayed",
+    "propertyName": "display",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "meta",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Cursor Type",
+        "default": "auto",
+        "options": [
+          {
+            "name": "Inline Display",
+            "value": "inline"
+          },
+          {
+            "name": "Block (New line)",
+            "value": "block"
+          },
+          {
+            "name": "Content Only",
+            "value": "contents"
+          },
+          {
+            "name": "Flexible container",
+            "value": "flex"
+          },
+          {
+            "name": "Inline Block",
+            "value": "inline-block"
+          },
+          {
+            "name": "Inline flex",
+            "value": "inline flex"
+          },
+          {
+            "name": "Inline grid",
+            "value": "inline-grid"
+          },
+          {
+            "name": "Inline table",
+            "value": "inline-table"
+          },
+          {
+            "name": "List item",
+            "value": "list-item"
+          },
+          {
+            "name": "Contextual block or inline",
+            "value": "run-in"
+          },
+          {
+            "name": "Table",
+            "value": "table"
+          },
+          {
+            "name": "Like Caption element",
+            "value": "table-caption"
+          },
+          {
+            "name": "Table column group",
+            "value": "table-column-group"
+          },
+          {
+            "name": "Table header group",
+            "value": "table-header-group"
+          },
+          {
+            "name": "Table footer group",
+            "value": "table-footer-group"
+          },
+          {
+            "name": "Table row group",
+            "value": "table-row-group"
+          },
+          {
+            "name": "Table cell",
+            "value": "table-cell"
+          },
+          {
+            "name": "Table column",
+            "value": "table-column"
+          },
+          {
+            "name": "Table row",
+            "value": "table-row"
+          },
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  }
+]

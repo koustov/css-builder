@@ -26,7 +26,7 @@ const App = () => {
       <div style={{border: "1px solid #cdcdcd", display:"flex", flexDirection:'column', height: '100%'}}>
         <div style={{padding: "1rem", height: '100px'}}>
   <h4>Styling Area</h4>
-  <pre>Currently completed only attributes starts with "a" and "c"</pre>
+  <pre>Currently completed only attributes starts with "a","c" and "d"</pre>
         </div>
 
         <div style={{padding: '1rem', flex: 1, overflow:"hidden"}}><CSSBuilder inline onChange={(v) => {setVal(v)}}/></div></div>
