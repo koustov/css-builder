@@ -7,12 +7,26 @@ import 'css-builder/dist/index.css'
 const App = () => {
   const [val, setVal] = useState({border:'1px'});
 
-  return <div className="wrapper">
+  return (
+  <div className="page-top">
+    <div class="header">
+      <a class="logo" href=".page-top">React CSS Builder</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="https://www.npmjs.com/package/react-ui-css-builder" target="_blank" class="link link-theme link-arrow">NPM</a></li>
+        <li><a href="https://github.com/koustov/css-builder" target="_blank" class="link link-theme link-arrow">Git</a></li>
+        <li><a href="https://github.com/koustov/css-builder" target="_blank" class="link link-theme link-arrow">Star</a></li>
+      </ul>
+    </div>
+
+  <div className="wrapper main">
+    
     <div className="config">
       <div style={{border: "1px solid #cdcdcd", display:"flex", flexDirection:'column', height: '100%'}}>
         <div style={{padding: "1rem", height: '100px'}}>
   <h4>Styling Area</h4>
-  <pre>Currently completed only attributes starts with "a"</pre>
+  <pre>Currently completed only attributes starts with "a" and "c"</pre>
         </div>
 
         <div style={{padding: '1rem', flex: 1, overflow:"hidden"}}><CSSBuilder inline onChange={(v) => {setVal(v)}}/></div></div>
@@ -34,6 +48,7 @@ const App = () => {
       <legend>Target Box</legend>
     <fieldset className="inner">
       <legend>Inner Box</legend>
+      <input type="text" placeholder="[sample input]"/>
       </fieldset>
       </fieldset>
       </div>
@@ -46,6 +61,8 @@ const App = () => {
     </div>
  
     
+  </div>
+  )
 }
 
 export default App

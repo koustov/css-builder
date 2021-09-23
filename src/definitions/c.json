@@ -1,0 +1,1125 @@
+[
+  {
+    "display": "Table Caption",
+    "description": "Specifies the placement of a table caption",
+    "link": "https://www.w3schools.com/cssref/pr_tab_caption-side.asp",
+    "propertyName": "caption-side",
+    "valuetemplate": "{0}",
+    "categories": ["caption", "table"],
+    "tags": "all, table",
+    "controls": [
+      {
+        "type": "select",
+        "default": "top",
+        "options": [
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          },
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Bottom",
+            "value": "bottom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Caret Color",
+    "description": "Specifies the color of the cursor (caret) in inputs, textareas, or any element that is editable",
+    "link": "https://www.w3schools.com/cssref/css3_pr_caret-color.asp",
+    "propertyName": "caret-color",
+    "valuetemplate": "{0}",
+    "categories": ["color"],
+    "tags": "color",
+    "controls": [
+      {
+        "type": "select",
+        "default": "auto",
+        "label": "Color",
+        "options": [
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          },
+          {
+            "name": "Custom",
+            "value": {
+              "controls": [
+                {
+                  "type": "color",
+                  "label": "Custom Color"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Charset",
+    "description": "Specifies the character encoding to use",
+    "link": "https://www.w3schools.com/cssref/pr_charset_rule.asp",
+    "propertyName": "@charset",
+    "valuetemplate": "{0}",
+    "categories": ["Misc"],
+    "tags": "meta",
+    "controls": [
+      {
+        "type": "text",
+        "default": ""
+      }
+    ]
+  },
+  {
+    "display": "Clear",
+    "description": "Specifies what should happen with the element that is next to a floating element",
+    "link": "https://www.w3schools.com/cssref/pr_class_clear.asp",
+    "propertyName": "clear",
+    "valuetemplate": "{0}",
+    "categories": ["misc"],
+    "tags": "meta",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Clear Property",
+        "default": "none",
+        "options": [
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          },
+          {
+            "name": "None",
+            "value": "None"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          },
+          {
+            "name": "Bottom",
+            "value": "bottom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Clip",
+    "description": "Clips an absolutely positioned element",
+    "link": "https://www.w3schools.com/cssref/pr_pos_clip.asp",
+    "propertyName": "clip",
+    "valuetemplate": "{0}",
+    "categories": ["misc"],
+    "tags": "meta",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Clip",
+        "default": "auto",
+        "options": [
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Shape",
+            "valuetemplate": "shape({0} {1} {2} {3})",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Top"
+                },
+                {
+                  "type": "number",
+                  "label": "Right"
+                },
+                {
+                  "type": "number",
+                  "label": "Bottom"
+                },
+                {
+                  "type": "number",
+                  "label": "Left"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Color",
+    "description": "Set the text-color for different elements",
+    "link": "https://www.w3schools.com/cssref/pr_text_color.asp",
+    "propertyName": "color",
+    "valuetemplate": "{0}",
+    "categories": ["color"],
+    "tags": "color",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Value",
+        "options": [
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          },
+          {
+            "name": "Custom",
+            "value": {
+              "controls": [
+                {
+                  "type": "color",
+                  "label": "Custom Color"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Column Count",
+    "description": "Specifies the number of columns an element should be divided into",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-count.asp",
+    "propertyName": "column-count",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Value",
+        "defaukt": "auto",
+        "options": [
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Custom",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Count"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Column Fills",
+    "description": "Specifies how to fill columns, balanced or not",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-fill.asp",
+    "propertyName": "column-fill",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Value",
+        "default": "balance",
+        "options": [
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Balance",
+            "value": "balance"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Column Gap",
+    "description": "Specifies the gap between the columns",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-gap.asp",
+    "propertyName": "column-gap",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Value",
+        "default": "normal",
+        "options": [
+          {
+            "name": "Normal",
+            "value": "normal"
+          },
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}px",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Gap(in px)"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Column Rule",
+    "description": "Container column rule",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-rule.asp",
+    "propertyName": "column-rule",
+    "valuetemplate": "{0} {1} {2}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Width",
+        "default": "medium",
+        "link": "https://www.w3schools.com/cssref/css3_pr_column-rule-width.asp",
+        "description": "Specifies the width of the rule between columns",
+        "options": [
+          {
+            "name": "Medium",
+            "value": "medium"
+          },
+          {
+            "name": "Thin",
+            "value": "thin"
+          },
+          {
+            "name": "Thick",
+            "value": "thick"
+          },
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}px",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Custom Width"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      },
+
+      {
+        "type": "select",
+        "label": "Styles",
+        "description": "Specifies the style of the rule between columns",
+        "link": "https://www.w3schools.com/cssref/css3_pr_column-rule-style.asp",
+        "default": "none",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Hidden",
+            "value": "hidden"
+          },
+          {
+            "name": "Dotted",
+            "value": "dotted"
+          },
+          {
+            "name": "Dashed",
+            "value": "dashed"
+          },
+          {
+            "name": "Solid",
+            "value": "solid"
+          },
+          {
+            "name": "Double",
+            "value": "double"
+          },
+          {
+            "name": "Groove",
+            "value": "groove"
+          },
+          {
+            "name": "Ridge",
+            "value": "ridge"
+          },
+          {
+            "name": "Inset",
+            "value": "inset"
+          },
+          {
+            "name": "Outset",
+            "value": "outset"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "label": "Color",
+        "default": "inherit",
+        "description": "Specifies the color of the rule between columns",
+        "link": "https://www.w3schools.com/cssref/css3_pr_column-rule-color.asp",
+        "options": [
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}",
+            "value": {
+              "controls": [
+                {
+                  "type": "color",
+                  "label": "Value"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      },
+      {
+        "name": "Default value",
+        "value": "initial"
+      },
+      {
+        "name": "Inherit from parent",
+        "value": "inherit"
+      }
+    ]
+  },
+  {
+    "display": "Column Rule: Color",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-rule-width.asp",
+    "description": "Specifies the width of the rule between columns",
+    "propertyName": "column-rule-color",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Color",
+        "default": "inherit",
+        "description": "Specifies the color of the rule between columns",
+        "link": "https://www.w3schools.com/cssref/css3_pr_column-rule-color.asp",
+        "options": [
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}",
+            "value": {
+              "controls": [
+                {
+                  "type": "color",
+                  "label": "Value"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Column Rule: Style",
+    "description": "Specifies the style of the rule between columns",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-rule-style.asp",
+    "propertyName": "column-rule-style",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Styles",
+
+        "default": "none",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Hidden",
+            "value": "hidden"
+          },
+          {
+            "name": "Dotted",
+            "value": "dotted"
+          },
+          {
+            "name": "Dashed",
+            "value": "dashed"
+          },
+          {
+            "name": "Solid",
+            "value": "solid"
+          },
+          {
+            "name": "Double",
+            "value": "double"
+          },
+          {
+            "name": "Groove",
+            "value": "groove"
+          },
+          {
+            "name": "Ridge",
+            "value": "ridge"
+          },
+          {
+            "name": "Inset",
+            "value": "inset"
+          },
+          {
+            "name": "Outset",
+            "value": "outset"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Column Rule: Width",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-rule-width.asp",
+    "description": "Specifies the width of the rule between columns",
+    "propertyName": "column-rule-width",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Width",
+        "default": "medium",
+
+        "options": [
+          {
+            "name": "Medium",
+            "value": "medium"
+          },
+          {
+            "name": "Thin",
+            "value": "thin"
+          },
+          {
+            "name": "Thick",
+            "value": "thick"
+          },
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}px",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Custom Width"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Column Span",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-span.asp",
+    "description": "Specifies how many columns an element should span across",
+    "propertyName": "column-span",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Width",
+        "default": "none",
+
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "All",
+            "value": "all"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Column Width",
+    "link": "https://www.w3schools.com/cssref/css3_pr_column-width.asp",
+    "description": "Specifies the column width",
+    "propertyName": "column-width",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Width",
+        "default": "none",
+
+        "options": [
+          {
+            "name": "Automatic",
+            "value": "auto"
+          },
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}px",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Length"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Columns",
+    "link": "https://www.w3schools.com/cssref/css3_pr_columns.asp",
+    "description": "Specifies the column definition",
+    "propertyName": "columns",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Column Width",
+        "default": "auto",
+        "options": [
+          {
+            "name": "Automatic",
+            "value": "auto"
+          },
+          {
+            "name": "Custom",
+            "valuetemplate": "{0}px {1}",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Custom Width"
+                },
+                {
+                  "type": "number",
+                  "label": "Column Count"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Content",
+    "link": "https://www.w3schools.com/cssref/pr_gen_content.asp",
+    "description": "Used with the :before and :after pseudo-elements, to insert generated content",
+    "propertyName": "content",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Value",
+        "default": "normal",
+        "options": [
+          {
+            "name": "Normal",
+            "value": "normal"
+          },
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Counter",
+            "valuetemplate": "counter({0})",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Counter Value"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Attribute",
+            "valuetemplate": "attr({0})",
+            "value": {
+              "controls": [
+                {
+                  "type": "text",
+                  "label": "Attribute Value"
+                }
+              ]
+            }
+          },
+          {
+            "name": "String",
+            "valuetemplate": "{0}",
+            "value": {
+              "controls": [
+                {
+                  "type": "text",
+                  "label": "String Value"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Open Quote",
+            "value": "open-quote"
+          },
+          {
+            "name": "Close Quote",
+            "value": "close-quote"
+          },
+          {
+            "name": "No Open Quote",
+            "value": "no-open-quote"
+          },
+          {
+            "name": "No Close Quote",
+            "value": "no-close-quote"
+          },
+          {
+            "name": "URL",
+            "valuetemplate": "url({0})",
+            "value": {
+              "controls": [
+                {
+                  "type": "text",
+                  "label": "URL Value"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Counter Increment",
+    "link": "https://www.w3schools.com/cssref/pr_gen_counter-increment.asp",
+    "description": "Increases or decreases the value of one or more CSS counters",
+    "propertyName": "counter-increment",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Value",
+        "default": "none",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Identifier",
+            "valuetemplate": "{0}",
+            "value": {
+              "controls": [
+                {
+                  "type": "text",
+                  "label": "ID Value"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Counter Reset",
+    "link": "https://www.w3schools.com/cssref/pr_gen_counter-reset.asp",
+    "description": "Creates or resets one or more CSS counters",
+    "propertyName": "counter-reset",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Value",
+        "default": "none",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Identifier",
+            "valuetemplate": "{0}",
+            "value": {
+              "controls": [
+                {
+                  "type": "text",
+                  "label": "ID Value"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "Cursor",
+    "link": "https://www.w3schools.com/cssref/playit.asp?filename=playcss_cursor&preval=alias",
+    "description": "Specifies the mouse cursor to be displayed when pointing over an element",
+    "propertyName": "cursor",
+    "valuetemplate": "{0}",
+    "categories": ["misc"],
+    "tags": "meta",
+    "controls": [
+      {
+        "type": "select",
+        "label": "Cursor Type",
+        "default": "auto",
+        "options": [
+          {
+            "name": "Automatic",
+            "value": "auto"
+          },
+          {
+            "name": "Alias",
+            "value": "alias"
+          },
+          {
+            "name": "Cell",
+            "value": "cell"
+          },
+          {
+            "name": "Context Menu",
+            "value": "context-menu"
+          },
+          {
+            "name": "Column Resize",
+            "value": "col-resize"
+          },
+          {
+            "name": "Copy",
+            "value": "copy"
+          },
+          {
+            "name": "Crosshair",
+            "value": "crosshair"
+          },
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Edge Resize",
+            "value": "e-resize"
+          },
+          {
+            "name": "Bidirectional Edge Resize",
+            "value": "ew-resize"
+          },
+          {
+            "name": "Grab-able",
+            "value": "grab"
+          },
+          {
+            "name": "Grabbed",
+            "value": "grabbing"
+          },
+          {
+            "name": "Help",
+            "value": "help"
+          },
+          {
+            "name": "Move Edge",
+            "value": "move"
+          },
+          {
+            "name": "Resize towards North",
+            "value": "n-resize"
+          },
+          {
+            "name": "Resize towards North East",
+            "value": "ne-resize"
+          },
+          {
+            "name": "Resize towards North South East West",
+            "value": "nesw-resize"
+          },
+          {
+            "name": "Resize towards North South",
+            "value": "ns-resize"
+          },
+          {
+            "name": "Resize towards North West",
+            "value": "nw-resize"
+          },
+          {
+            "name": "Resize towards North West South East",
+            "value": "nwse-resize"
+          },
+          {
+            "name": "Cannot drop dragged item",
+            "value": "no-drop"
+          },
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Action not allowed",
+            "value": "not-allowed"
+          },
+          {
+            "name": "Pointer",
+            "value": "pointer"
+          },
+          {
+            "name": "Loading / Progress",
+            "value": "progress"
+          },
+          {
+            "name": "Row Resize",
+            "value": "row-resize"
+          },
+          {
+            "name": "Resize towards South",
+            "value": "s-resize"
+          },
+          {
+            "name": "Resize towards South East",
+            "value": "se-resize"
+          },
+          {
+            "name": "Resize towards South West",
+            "value": "sw-resize"
+          },
+          {
+            "name": "Text selection",
+            "value": "text"
+          },
+          {
+            "name": "URL (Custom Cursor)",
+            "valuetemplate": "{0}",
+            "value": {
+              "controls": [
+                {
+                  "type": "text",
+                  "label": "Coma Separated"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Vertical text selection",
+            "value": "vertical-text"
+          },
+          {
+            "name": "Resize towards West",
+            "value": "w-resize"
+          },
+          {
+            "name": "Wait",
+            "value": "wait"
+          },
+          {
+            "name": "Zoom IN",
+            "value": "zoom-in"
+          },
+          {
+            "name": "Zoom Out",
+            "value": "zoom-out"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  }
+]
