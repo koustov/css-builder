@@ -185,7 +185,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://tapasadhikary.com"><img src="https://avatars.githubusercontent.com/u/3633137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/koustov/css-builder/commits?author=atapas" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/koustov"><img src="https://avatars.githubusercontent.com/u/7145967?v=4?s=100" width="100px;" alt=""/><br /><sub><b>koustov</b></sub></a><br /><a href="https://github.com/koustov/css-builder/commits?author=koustov" title="Code">💻</a> <a href="#maintenance-koustov" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/koustov"><img src="https://avatars.githubusercontent.com/u/7145967?v=4?s=100" width="100px;" alt=""/><br /><sub><b>koustov</b></sub></a><br /><a href="https://github.com/koustov/css-builder/commits?author=koustov" title="Code">💻</a> <a href="#maintenance-koustov" title="Maintenance">🚧</a> <a href="https://github.com/koustov/css-builder/pulls?q=is%3Apr+reviewed-by%3Akoustov" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
