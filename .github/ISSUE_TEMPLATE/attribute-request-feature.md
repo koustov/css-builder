@@ -2,7 +2,7 @@
 name: Attribute Request Feature
 about: The idea of this template to request for new CSS attribute(s)
 title: Attribute definition request for X
-labels: enhancement
+labels: enhancement,hactoberfest,good first issue
 assignees: ''
 
 ---
