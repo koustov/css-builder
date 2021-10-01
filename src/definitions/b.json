@@ -3,17 +3,16 @@
     "display": "Border",
     "description": "This property specifies the default alignment for items inside the flexible container",
     "propertyName": "border",
-    "valuetemplate": "{0} {1} {2}",
+    "valuetemplate": "{0}px {1} {2}",
     "categories": ["color", "border"],
     "tags": "color,  presentation",
     "controls": [
       {
-        "type": "range",
+        "type": "number",
         "label": "Width",
         "min": "0",
         "max": "100",
-        "default": "1",
-        "suffix": "px"
+        "default": "1"
       },
       {
         "type": "select",

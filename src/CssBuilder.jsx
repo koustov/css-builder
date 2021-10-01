@@ -98,6 +98,14 @@ export const CSSBuilder = ({
           <div
             style={{ height: '100%', display: 'flex', flexDirection: 'column' }}
           >
+            <div style={{ height: '60px', padding: '1rem' }}>
+              <CBSimpleButton
+                type='button'
+                value='Add an CSS attribute'
+                onClick={() => onRowAdd()}
+                style={{ height: '40px' }}
+              />
+            </div>
             <div style={{ overflow: 'auto', flex: 1 }}>
               <Accordion
                 selectedIndex={selectedIndex}
@@ -137,14 +145,7 @@ export const CSSBuilder = ({
                 })}
               </Accordion>
             </div>
-            <div style={{ height: '40px' }}>
-              <CBSimpleButton
-                type='button'
-                value='Add'
-                onClick={() => onRowAdd()}
-                style={{ height: '40px' }}
-              />
-            </div>
+
             {showPropertyBorwser ? (
               <PropertyBrowser
                 show={showPropertyBorwser}

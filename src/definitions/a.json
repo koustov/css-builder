@@ -493,7 +493,7 @@
                 {
                   "type": "number",
                   "label": "In Seconds",
-                  "valuetemplate": "{0} "
+                  "valuetemplate": "{0}s"
                 }
               ]
             }

@@ -10,20 +10,18 @@ const fadeIn = keyframes`
 `
 
 export const CBSimpleButton = styled.input`
-  width: 10%;
-  padding: 1.5em auto;
-  margin: 1em auto;
+  padding: 8px;
   background-color: transparent;
   border: none;
   border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: 1px solid ${({ theme }) => theme.colors.button.borderColor};
   color: ${({ theme }) => theme.colors.color};
+  display: block;
   &:hover {
-    letter-spacing: 0.8em;
+    /* letter-spacing: 0.8em; */
     border-left: 10px solid ${({ theme }) => theme.colors.button.borderColor};
   }
 `
