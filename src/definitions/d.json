@@ -13,12 +13,12 @@
         "default": "ltr",
         "options": [
           {
-            "name": "ltr",
-            "value": "Left to right"
+            "value": "ltr",
+            "name": "Left to right"
           },
           {
-            "name": "rtl",
-            "value": "Right to left"
+            "value": "rtl",
+            "name": "Right to left"
           },
           {
             "name": "Default value",

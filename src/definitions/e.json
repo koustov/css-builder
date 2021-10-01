@@ -1,0 +1,36 @@
+[
+  {
+    "display": "empty-cells",
+    "description": "Specifies whether or not to display borders and background on empty cells in a table",
+    "link": "https://www.w3schools.com/cssref/pr_tab_empty-cells.asp",
+    "propertyName": "empty-cells",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "default": "show",
+        "label": "Value",
+        "options": [
+          {
+            "name": "show",
+            "value": "Show"
+          },
+          {
+            "name": "Hide",
+            "value": "hide"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  }
+]
