@@ -1,6 +1,6 @@
 [
     {
-      "display": "justify-content",
+      "display": "Justify Content Vertically",
       "description": "Specifies the alignment between the items inside a flexible container when the items do not use all available space",
       "link": "https://www.w3schools.com/cssref/css3_pr_justify-content.asp",
       "propertyName": "justify-content",
