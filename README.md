@@ -36,7 +36,8 @@ Give STAR to encourage me to complete this mammoth task with more energy
 - [When do you need it?](#when-do-you-need-it)
 - [Usage](#usage)
   - [Install](#install)
-- [Highlight](#highlight)
+- [When do you need it?](#when-do-you-need-it)
+- [Run it locally](#run-it-locally)
 - [Supported Elements](#supported-elements)
 - [How to use](#how-to-use)
 - [Playground](#playground)
@@ -86,6 +87,42 @@ or
 
 ```bash
 yarn add react-ui-css-builder
+```
+
+## Run it locally
+
+1. Clone the repo
+2. Navigate to directory
+3. Open terminal
+4. Install Packages
+
+```
+yarn
+```
+
+5. Start the library
+
+```
+yarn start
+```
+
+6. Navigate to inner folder called `example`
+7. Install Packages
+
+```
+yarn
+```
+
+7. Start the library
+
+```
+yarn start
+```
+
+9. Your application is running on 3000
+
+```
+http://localhost:3000/
 ```
 
 ## Highlight 🔥
