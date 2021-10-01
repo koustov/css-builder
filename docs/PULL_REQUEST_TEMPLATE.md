@@ -1,5 +1,3 @@
-# Pull Request Template
-
 ## Description
 
 Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
@@ -21,16 +19,12 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 
 - [ ] Verified that added/modified attribues are properly loading on browsing
 - [ ] Verified that added/modified attribues editing templates are properly rendered
-- [ ] Verified the putput on changes
+- [ ] Verified the output on changes
 - [ ] Verified the deployment
 
 ## Checklist:
 
 - [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
+- [ ] I have commented my code, particularly in hard-to-understand areas. If applicable.
+- [ ] I have made corresponding changes to the documentation. If applicable.
 - [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests(if any) pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
-- [ ] I have checked my code and corrected any misspellings
