@@ -66,6 +66,14 @@ Visit https://css-builder.vercel.app/
     - chalk (default)
     - dark
 
+## 🤲 Want to Motivate?
+
+Who doesn't need motivation? Please give the project a star(⭐) and/or share it in your dev circle.
+
+## Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
+
+[![Stargazers repo roster for @koustov/css-builder](https://reporoster.com/stars/koustov/css-builder)](https://github.com/koustov/css-builder/stargazers)
+
 ## When do you need it
 
 - You want to learn CSS while playing?
