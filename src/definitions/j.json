@@ -1,0 +1,49 @@
+[
+    {
+      "display": "justify-content",
+      "description": "Specifies the alignment between the items inside a flexible container when the items do not use all available space",
+      "link": "https://www.w3schools.com/cssref/css3_pr_justify-content.asp",
+      "propertyName": "justify-content",
+      "valuetemplate": "{0}",
+      "categories": ["alignment"],
+      "tags": "flex, alignment",
+      "controls": [
+        {
+          "type": "select",
+          "default": "flex-start",
+          "label": "Value",
+          "options": [
+            {
+              "name": "Start",
+              "value": "flex-start"
+            },
+            {
+              "name": "End",
+              "value": "flex-end"
+            },
+            {
+              "name": "Center",
+              "value": "center"
+            },
+            {
+              "name": "Space Between",
+              "value": "space-between"
+            },
+            {
+              "name": "Space Around",
+              "value": "space-around"
+            },
+            {
+              "name": "Default Value",
+              "value": "initial"
+            },
+            {
+              "name": "Inherit from parent",
+              "value": "inherit"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
