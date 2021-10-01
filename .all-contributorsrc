@@ -1,0 +1,35 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "atapas",
+      "name": "Tapas Adhikary",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3633137?v=4",
+      "profile": "https://tapasadhikary.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "koustov",
+      "name": "koustov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7145967?v=4",
+      "profile": "https://github.com/koustov",
+      "contributions": [
+        "code",
+        "maintenance",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "css-builder",
+  "projectOwner": "koustov",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

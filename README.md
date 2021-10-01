@@ -1,4 +1,5 @@
 <div align="center">
+
    <p>
     <h1>react-ui-css-builder</h1>
   </p>
@@ -16,14 +17,16 @@
 </div>
 
 ---
-
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 ![GitHub watchers](https://img.shields.io/github/watchers/koustov/css-builder.svg?logo=github&label=Watch) ![GitHub watchers](https://img.shields.io/github/issues/koustov/css-builder?logo=github&label=Issues) ![GitHub watchers](https://img.shields.io/github/stars/koustov/css-builder?logo=github&label=Stars) ![GitHub watchers](https://img.shields.io/npm/dt/react-ui-css-builder.svg?logo=npm&label=downloads)
 
 This is a **fully flexible** css builder based on [`React`](https://facebook.github.io/react/)
 
 ## Note
 
-The basic infrastructure is created and currently all attributes starting with **"a", "c", "d" and "e" has been incorporated**.
+The basic infrastructure is created and currently all attributes starting with **"a", "c", "d", "e", and "j" has been incorporated**.
 You are welcome to inject more and make it "full-fledged" css-builder for **everyone**
 Currently its a preview build and "0.1.0" will be the first fully fledged version to consume.
 
@@ -62,6 +65,14 @@ Visit https://css-builder.vercel.app/
   - Out of the box there are two themes
     - chalk (default)
     - dark
+
+## 🤲 Want to Motivate?
+
+Who doesn't need motivation? Please give the project a star(⭐) and/or share it in your dev circle.
+
+## Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
+
+[![Stargazers repo roster for @koustov/css-builder](https://reporoster.com/stars/koustov/css-builder)](https://github.com/koustov/css-builder/stargazers)
 
 ## When do you need it
 
@@ -171,3 +182,24 @@ Refer [contributing ](./CONTRIBUTING.md)
 ## License
 
 MIT © [Koustov](https://github.com/koustov)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://tapasadhikary.com"><img src="https://avatars.githubusercontent.com/u/3633137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/koustov/css-builder/commits?author=atapas" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/koustov"><img src="https://avatars.githubusercontent.com/u/7145967?v=4?s=100" width="100px;" alt=""/><br /><sub><b>koustov</b></sub></a><br /><a href="https://github.com/koustov/css-builder/commits?author=koustov" title="Code">💻</a> <a href="#maintenance-koustov" title="Maintenance">🚧</a> <a href="https://github.com/koustov/css-builder/pulls?q=is%3Apr+reviewed-by%3Akoustov" title="Reviewed Pull Requests">👀</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
