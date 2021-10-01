@@ -1,7 +1,5 @@
 <div align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
    <p>
     <h1>react-ui-css-builder</h1>
   </p>
@@ -19,7 +17,9 @@
 </div>
 
 ---
-
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 ![GitHub watchers](https://img.shields.io/github/watchers/koustov/css-builder.svg?logo=github&label=Watch) ![GitHub watchers](https://img.shields.io/github/issues/koustov/css-builder?logo=github&label=Issues) ![GitHub watchers](https://img.shields.io/github/stars/koustov/css-builder?logo=github&label=Stars) ![GitHub watchers](https://img.shields.io/npm/dt/react-ui-css-builder.svg?logo=npm&label=downloads)
 
 This is a **fully flexible** css builder based on [`React`](https://facebook.github.io/react/)
