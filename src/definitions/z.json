@@ -1,11 +1,11 @@
 [
   {
-    "display": "z-index",
-    "description": "Specifies the stack order of an element",
+    "display": "Stack Order",
+    "description": "Specifies the stack order of an element. Higher stack order gets priority over lower order in case of rendering.",
     "link": "https://www.w3schools.com/cssref/pr_pos_z-index.asp",
     "propertyName": "z-index",
     "valuetemplate": "{0}",
-    "categories": ["container"],
+    "categories": ["container", "alignment"],
     "tags": "container",
     "controls": [
       {
@@ -18,16 +18,23 @@
             "value": "auto"
           },
           {
-            "name": "Number",
-            "value": "number"
-          },
-          {
             "name": "Default value",
             "value": "initial"
           },
           {
             "name": "Inherit from parent",
             "value": "inherit"
+          },
+          {
+            "name": "Custom",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Count"
+                }
+              ]
+            }
           }
         ]
       }
