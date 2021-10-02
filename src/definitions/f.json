@@ -1,0 +1,36 @@
+[
+  {
+    "display": "flex",
+    "description": "A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties",
+    "link": "https://www.w3schools.com/cssref/css3_pr_flex.asp",
+    "propertyName": "flex",
+    "valuetemplate": "{0}",
+    "categories": ["container"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "default": "auto",
+        "label": "Value",
+        "options": [
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Number",
+            "value": "number"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  }
+]
