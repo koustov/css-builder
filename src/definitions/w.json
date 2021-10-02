@@ -1,0 +1,242 @@
+[
+    {
+      "display": "White Space",
+      "description": "Specifies how white-space inside an element is handled",
+      "link": "https://www.w3schools.com/cssref/pr_text_white-space.asp",
+      "propertyName": "white-space",
+      "valuetemplate": "{0}",
+      "categories": ["container", "text"],
+      "tags": "container,text",
+      "controls": [
+        {
+          "type": "select",
+          "default": "normal",
+          "label": "Value",
+          "options": [
+            {
+                "name": "Normal",
+                "value": "normal"
+            },
+            {
+                "name": "No Wrap",
+                "value": "nowrap"
+            },
+            {
+                "name": "Whitespace preserved and wraps on line breaks",
+                "value": "pre"
+            },
+            {
+                "name": "Whitespace preserved and collapse on single whitespace",
+                "value": "pre-line"
+            },
+            {
+                "name": "Whitespace preserved and wraps when necessary",
+                "value": "pre-wrap"
+            },
+            {
+                "name": "Default value",
+                "value": "initial"
+            },
+            {
+                "name": "Inherit from parent",
+                "value": "inherit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+        "display": "Width",
+        "description": "Specifies the width of an element",
+        "link": "https://www.w3schools.com/cssref/pr_dim_width.asp",
+        "propertyName": "width",
+        "valuetemplate": "{0}",
+        "categories": ["container"],
+        "tags": "container",
+        "controls": [
+          {
+            "type": "select",
+            "default": "auto",
+            "label": "Value",
+            "options": [
+              {
+                "name": "Auto",
+                "value": "auto"
+              },
+              {
+                "name": "Custom",
+                "valuetemplate": "{0}px",
+                "value": {
+                  "controls": [
+                    {
+                      "type": "number",
+                      "label": "Length"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "Percentage",
+                "value": "%"
+              },
+              {
+                "name": "Default value",
+                "value": "initial"
+              },
+              {
+                "name": "Inherit from parent",
+                "value": "inherit"
+              }
+            ]
+          }
+        ]
+    },
+    {
+        "display": "Word Break",
+        "description": "Specifies how words should break when reaching the end of a line",
+        "link": "https://www.w3schools.com/cssref/css3_pr_word-break.asp",
+        "propertyName": "word-break",
+        "valuetemplate": "{0}",
+        "categories": ["container", "word"],
+        "tags": "container,word",
+        "controls": [
+            {
+                "type": "select",
+                "default": "normal",
+                "label": "Value",
+                "options": [
+                  {
+                    "name": "Normal",
+                    "value": "normal"
+                  },
+                  {
+                    "name": "Break All",
+                    "value": "break-all"
+                  },
+                  {
+                    "name": "Keep All",
+                    "value": "keep-all"
+                  },
+                  {
+                    "name": "Break Word",
+                    "value": "break-word"
+                  },          
+                  {
+                    "name": "Default value",
+                    "value": "initial"
+                  },
+                  {
+                    "name": "Inherit from parent",
+                    "value": "inherit"
+                  }
+                ]
+            }
+        ]
+    },
+    {
+        "display": "Word Spacing",
+        "description": "Specifies the white space between words",
+        "link": "https://www.w3schools.com/cssref/pr_text_word-spacing.asp",
+        "propertyName": "word-spacing",
+        "valuetemplate": "{0}",
+        "categories": ["container","word"],
+        "tags": "container,word",
+        "controls": [
+            {
+                "type": "select",
+                "default": "normal",
+                "label": "Value",
+                "options": [
+                  {
+                    "name": "Normal",
+                    "value": "normal"
+                  },
+                  {
+                    "name": "Custom",
+                    "valuetemplate": "{0}px",
+                    "value": {
+                      "controls": [
+                        {
+                          "type": "number",
+                          "label": "Length"
+                        }
+                      ]
+                    }
+                  },   
+                  {
+                    "name": "Default value",
+                    "value": "initial"
+                  },
+                  {
+                    "name": "Inherit from parent",
+                    "value": "inherit"
+                  }
+                ]
+            }
+        ]
+    },
+    {
+        "display": "Word Wrap",
+        "description": "Allows long words to be able to be broken and wrap onto the next line",
+        "link": "https://www.w3schools.com/cssref/css3_pr_word-wrap.asp",
+        "propertyName": "word-wrap",
+        "valuetemplate": "{0}",
+        "categories": ["container","word"],
+        "tags": "container,word",
+        "controls": [
+            {
+                "type": "select",
+                "default": "normal",
+                "label": "Value",
+                "options": [
+                  {
+                    "name": "Normal",
+                    "value": "normal"
+                  },
+                  {
+                    "name": "Break Word",
+                    "value": "break-word"
+                  },
+                  {
+                    "name": "Default value",
+                    "value": "initial"
+                  },
+                  {
+                    "name": "Inherit from parent",
+                    "value": "inherit"
+                  }
+                ]
+            }
+        ]
+    },
+    {
+        "display": "Writing Mode",
+        "description": "Specifies whether lines of text are laid out horizontally or vertically",
+        "link": "https://www.w3schools.com/cssref/css3_pr_writing-mode.asp",
+        "propertyName": "writing-mode",
+        "valuetemplate": "{0}",
+        "categories": ["alignment","layout", "position"],
+        "tags": "alignment,layout,position",
+        "controls": [
+            {
+                "type": "select",
+                "default": "horizontal-tb",
+                "label": "Value",
+                "options": [
+                  {
+                    "name": "Horizontal content flow, top to bottom",
+                    "value": "horizontal-tb"
+                  },
+                  {
+                    "name": "Vertical content flow, right to left",
+                    "value": "vertical-rl"
+                  },
+                  {
+                    "name": "Vertical content flow, left to right",
+                    "value": "vertical-lr"
+                  }
+                ]
+            }
+        ]
+    }
+]
