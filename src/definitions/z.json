@@ -1,0 +1,44 @@
+[
+  {
+    "display": "Stack Order",
+    "description": "Specifies the stack order of an element. Higher stack order gets priority over lower order in case of rendering.",
+    "link": "https://www.w3schools.com/cssref/pr_pos_z-index.asp",
+    "propertyName": "z-index",
+    "valuetemplate": "{0}",
+    "categories": ["container", "alignment"],
+    "tags": "container",
+    "controls": [
+      {
+        "type": "select",
+        "default": "auto",
+        "label": "Value",
+        "options": [
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          },
+          {
+            "name": "Custom",
+            "value": {
+              "controls": [
+                {
+                  "type": "number",
+                  "label": "Count"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
+  
