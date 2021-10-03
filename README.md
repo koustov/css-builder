@@ -30,7 +30,7 @@ This is a **fully flexible** css builder based on [`React`](https://facebook.git
 
 ## Note
 
-Currently completed only subset of attributes for pending items refer git issue section.
+Currently completed only subset of attributes for pending items refer **git issue** section.
 You are welcome to inject more and make it "full-fledged" css-builder for **everyone**
 Currently its a preview build and "0.1.0" will be the first fully fledged version to consume.
 
