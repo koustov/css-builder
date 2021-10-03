@@ -55,7 +55,7 @@ const App = () => {
       <pre>
         Few of the properties works with specific element, chose the model
         carefully to play around. Currently completed only attributes starts
-        with "a", "c", "d", "e" and "j"
+        with "a", "c", "d", "h", "e" and "j"
       </pre>
       <div className='wrapper main'>
         <Tabs

@@ -1,5 +1,5 @@
 [
-    {
+  {  
       "display": "Place the punctuation",
       "description": "The hanging-punctuation property specifies whether a punctuation mark may be placed outside the line box at the start or at the end of a full line of text.",
       "link": "https://www.w3schools.com/cssref/css3_pr_hanging-punctuation.asp",
@@ -44,6 +44,82 @@
           ]
         }
       ]
-    }
+    },
+    {  
+        "display": "Set the height",
+        "description": "The height property sets the height of an element. The height of an element does not include padding, borders, or margins!",
+        "link": "https://www.w3schools.com/cssref/pr_dim_height.asp",
+        "propertyName": "height",
+        "valuetemplate": "{0}",
+        "categories": ["misc", "layout", "container"],
+        "tags": "size, height, scale",
+        "controls": [
+          {
+            "type": "select",
+            "default": "auto",
+            "label": "Value",
+            "options": [
+              {
+                "name": "Auto",
+                "value": "auto"
+              },
+              {
+                "name": "Set in pixel(px)",
+                "value": "50px"
+              },
+              {
+                "name": "Set in percentage(%)",
+                "value": "80%"
+              },
+              {
+                "name": "Default Value",
+                "value": "initial"
+              },
+              {
+                "name": "Inherit from parent",
+                "value": "inherit"
+              }
+            ]
+          }
+        ]
+      },
+      {  
+        "display": "Allow hyphens to wrap text",
+        "description": "The hyphens property defines whether hyphenation is allowed to create more soft wrap opportunities within a line of text.",
+        "link": "https://www.w3schools.com/cssref/css3_pr_hanging-punctuation.asp",
+        "propertyName": "hyphens",
+        "valuetemplate": "{0}",
+        "categories": ["misc", "layout", "container"],
+        "tags": "wrap, layout",
+        "controls": [
+          {
+            "type": "select",
+            "default": "none",
+            "label": "Value",
+            "options": [
+              {
+                "name": "No hypens",
+                "value": "none"
+              },
+              {
+                "name": "Words wrapped at '-' symbol",
+                "value": "manual"
+              },
+              {
+                "name": "Words wrapped automatically",
+                "value": "auto"
+              },
+              {
+                "name": "Default Value",
+                "value": "initial"
+              },
+              {
+                "name": "Inherit from parent",
+                "value": "inherit"
+              }
+            ]
+          }
+        ]
+      }
   ]
   
