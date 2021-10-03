@@ -75,7 +75,7 @@
     "link": "https://www.w3schools.com/cssref/pr_charset_rule.asp",
     "propertyName": "@charset",
     "valuetemplate": "{0}",
-    "categories": ["Misc"],
+    "categories": ["misc"],
     "tags": "meta",
     "controls": [
       {

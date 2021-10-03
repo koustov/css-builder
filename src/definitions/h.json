@@ -1,0 +1,49 @@
+[
+    {
+      "display": "Place the punctuation",
+      "description": "The hanging-punctuation property specifies whether a punctuation mark may be placed outside the line box at the start or at the end of a full line of text.",
+      "link": "https://www.w3schools.com/cssref/css3_pr_hanging-punctuation.asp",
+      "propertyName": "hanging-punctuation",
+      "valuetemplate": "{0}",
+      "categories": ["misc"],
+      "tags": "punctuation, character, paragraph",
+      "controls": [
+        {
+          "type": "select",
+          "default": "none",
+          "label": "Value",
+          "options": [
+            {
+              "name": "No Punctuation",
+              "value": "none"
+            },
+            {
+              "name": "At the First",
+              "value": "first"
+            },
+            {
+              "name": "At the Last",
+              "value": "last"
+            },
+            {
+              "name": "Allow at the End",
+              "value": "allow-end"
+            },
+            {
+              "name": "Force at the End",
+              "value": "force-end"
+            },
+            {
+              "name": "Default Value",
+              "value": "initial"
+            },
+            {
+              "name": "Inherit from parent",
+              "value": "inherit"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
