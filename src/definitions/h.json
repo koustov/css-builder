@@ -64,20 +64,42 @@
                 "value": "auto"
               },
               {
-                "name": "Set in pixel(px)",
-                "value": "50px"
-              },
-              {
-                "name": "Set in percentage(%)",
-                "value": "80%"
-              },
-              {
                 "name": "Default Value",
                 "value": "initial"
               },
               {
                 "name": "Inherit from parent",
                 "value": "inherit"
+              },
+              {
+                "name": "Custom",
+                "value": {
+                  "valuetemplate": "{0}{1}",
+                  "controls": [
+                    { "type": "number", "label": "Value" },
+                    { "type": "select",
+                      "default": "px",
+                      "label": "Unit",
+                      "options": [{
+                          "name": "Pixels",
+                          "value": "px"
+                        },
+                        {
+                          "name": "Percent",
+                          "value": "%"
+                        },
+                        {
+                          "name": "Em",
+                          "value": "em"
+                        }, 
+                        {
+                          "name": "Rem",
+                          "value": "rem"
+                        }
+                      ] 
+                    }
+                  ]
+                }
               }
             ]
           }
