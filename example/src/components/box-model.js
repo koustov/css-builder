@@ -11,10 +11,7 @@ export const BoxModel = () => {
   return (
     <div className='control-wrapper'>
       <fieldset className='container-fieldset'>
-        <legend>Coding Area</legend>
-        <pre>
-          Currently completed only attributes starts with "a","c" and "d"
-        </pre>
+        <legend>Code Area</legend>
         <div style={{ padding: '1rem', flex: 1, overflow: 'hidden' }}>
           <CSSBuilder
             inline
@@ -29,26 +26,23 @@ export const BoxModel = () => {
         <fieldset className='container-fieldset'>
           <legend>Playground</legend>
           <fieldset className='outer'>
-            <legend>Canvas Area</legend>
-            <fieldset className='outer'>
-              <legend>Outer box</legend>
-              <div
-                style={{
-                  flex: 1,
-                  height: '200px',
-                  width: '400px',
-                  display: 'flex'
-                }}
-              >
-                <fieldset className='target' style={val}>
-                  <legend>Target Box</legend>
-                  <fieldset className='inner'>
-                    <legend>Inner Box</legend>
-                    <input type='text' placeholder='[sample input]' />
-                  </fieldset>
+            <legend>Outer box</legend>
+            <div
+              style={{
+                flex: 1,
+                height: '200px',
+                width: '400px',
+                display: 'flex'
+              }}
+            >
+              <fieldset className='target' style={val}>
+                <legend>Target Box</legend>
+                <fieldset className='inner'>
+                  <legend>Inner Box</legend>
+                  <input type='text' placeholder='[sample input]' />
                 </fieldset>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
           </fieldset>
         </fieldset>
         <CodeArea code={val} />

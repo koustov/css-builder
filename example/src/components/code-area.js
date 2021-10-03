@@ -10,6 +10,9 @@ export const CodeArea = ({ code }) => {
   }
 
   const getFormattedData = () => {
+    if (!code) {
+      return ''
+    }
     if (checked === 0) {
       return JSON.stringify(code, null, 2)
     } else {
@@ -18,7 +21,7 @@ export const CodeArea = ({ code }) => {
   }
   return (
     <fieldset className='container-fieldset'>
-      <legend>Code</legend>
+      <legend>Snippet</legend>
       <div className='radio-button'>
         <ul>
           <li>
@@ -42,12 +45,12 @@ export const CodeArea = ({ code }) => {
           <li>
             <input
               type='radio'
-              id='f-option'
+              id='f-option1'
               name='selector'
               checked={checked === 1}
             />
             <label
-              for='f-option'
+              for='f-option1'
               onClick={() => {
                 setChecked(1)
               }}

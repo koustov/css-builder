@@ -17,9 +17,13 @@
 </div>
 
 ---
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ![GitHub watchers](https://img.shields.io/github/watchers/koustov/css-builder.svg?logo=github&label=Watch) ![GitHub watchers](https://img.shields.io/github/issues/koustov/css-builder?logo=github&label=Issues) ![GitHub watchers](https://img.shields.io/github/stars/koustov/css-builder?logo=github&label=Stars) ![GitHub watchers](https://img.shields.io/npm/dt/react-ui-css-builder.svg?logo=npm&label=downloads)
 
 This is a **fully flexible** css builder based on [`React`](https://facebook.github.io/react/)
@@ -102,35 +106,36 @@ yarn add react-ui-css-builder
 
 ## Run it locally
 
-1. Clone the repo
-2. Navigate to directory
-3. Open terminal
-4. Install Packages
+1. Fork the repo
+2. Clone it from your repo
+3. Navigate to directory
+4. Open terminal
+5. Install Packages
 
 ```
 yarn
 ```
 
-5. Start the library
+6. Start the library
 
 ```
 yarn start
 ```
 
-6. Navigate to inner folder called `example`
-7. Install Packages
+7. Navigate to inner folder called `example`
+8. Install Packages
 
 ```
 yarn
 ```
 
-7. Start the library
+9. Start the library
 
 ```
 yarn start
 ```
 
-9. Your application is running on 3000
+10. Your application is running on 3000
 
 ```
 http://localhost:3000/
