@@ -18,20 +18,32 @@
                 "value": "baseline"
             },
             {
-                "name": "Custom",
-                "valuetemplate": "{0}px",
+                "name": "Length (Custom)",
+                "valuetemplate": "{0}{1}",
                 "value": {
                   "controls": [
                     {
                       "type": "number",
-                      "label": "Length"
+                      "label": "Amount",
+                      "default": "0px"
+                    },
+                    {
+                      "type": "select",
+                      "label": "Unit",
+                      "default": "px",
+                      "options": [
+                        {
+                          "name": "Pixels",
+                          "value": "px"
+                        },
+                        {
+                          "name": "Percentage",
+                          "value": "%"
+                        }
+                      ]
                     }
                   ]
                 }
-            },
-            {
-                "name": "Percentage",
-                "value": "%"
             },
             {
                 "name": "Align to subscript baseline of container",
