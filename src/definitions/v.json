@@ -18,14 +18,14 @@
                 "value": "baseline"
             },
             {
-                "name": "Length (Custom)",
+                "name": "Custom",
                 "valuetemplate": "{0}{1}",
                 "value": {
                   "controls": [
                     {
                       "type": "number",
                       "label": "Amount",
-                      "default": "0px"
+                      "default": "0"
                     },
                     {
                       "type": "select",
