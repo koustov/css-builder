@@ -101,7 +101,7 @@ export const CSSBuilder = ({
             <div style={{ height: '60px', padding: '1rem' }}>
               <CBSimpleButton
                 type='button'
-                value='Add an CSS attribute'
+                value='+ CSS attribute'
                 onClick={() => onRowAdd()}
                 style={{ height: '40px' }}
               />

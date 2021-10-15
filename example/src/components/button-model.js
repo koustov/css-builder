@@ -10,10 +10,7 @@ export const ButtonModel = () => {
   return (
     <div className='control-wrapper'>
       <fieldset className='container-fieldset'>
-        <legend>Coding Area</legend>
-        <pre>
-          Currently completed only attributes starts with "a","c" and "d"
-        </pre>
+        <legend>Code Area</legend>
         <div style={{ padding: '1rem', flex: 1, overflow: 'hidden' }}>
           <CSSBuilder
             inline
