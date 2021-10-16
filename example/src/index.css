@@ -23,7 +23,7 @@ code {
 .wrapper {
   display: flex;
   flex: 1;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .config {
   flex: 1;
