@@ -5,8 +5,9 @@ import j from './j.json';
 import v from './v.json';
 import w from './w.json';
 import z from './z.json';
+import h from './h.json';
 import t2 from './definitions.json';
 
 import a from './a.json'
 
-export const Templates = a.concat(b, c, d, j, v, w, z);
+export const Templates = a.concat(b, c, d, h, j, v, w, z);
