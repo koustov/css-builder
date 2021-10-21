@@ -1,0 +1,126 @@
+[
+    {
+      "display": "Vertical Align",
+      "description": "Sets the vertical alignment of an element",
+      "link": "https://www.w3schools.com/cssref/pr_pos_vertical-align.asp",
+      "propertyName": "vertical-align",
+      "valuetemplate": "{0}",
+      "categories": ["alignment", "layout", "position"],
+      "tags": "alignment, layout, position",
+      "controls": [
+        {
+          "type": "select",
+          "default": "baseline",
+          "label": "Value",
+          "options": [
+            {
+                "name": "Align to baseline of container",
+                "value": "baseline"
+            },
+            {
+                "name": "Custom",
+                "valuetemplate": "{0}{1}",
+                "value": {
+                  "controls": [
+                    {
+                      "type": "number",
+                      "label": "Amount",
+                      "default": "0"
+                    },
+                    {
+                      "type": "select",
+                      "label": "Unit",
+                      "default": "px",
+                      "options": [
+                        {
+                          "name": "Pixels",
+                          "value": "px"
+                        },
+                        {
+                          "name": "Percentage",
+                          "value": "%"
+                        }
+                      ]
+                    }
+                  ]
+                }
+            },
+            {
+                "name": "Align to subscript baseline of container",
+                "value": "sub"
+            },
+            {
+                "name": "Align to superscript baseline of container",
+                "value": "super"
+            },
+            {
+                "name": "Align to top of container",
+                "value": "top"
+            },
+            {
+                "name": "Align to top of the container element's font",
+                "value": "text-top"
+            },
+            {
+                "name": "Align to middle of container",
+                "value": "middle"
+            },
+            {
+                "name": "Align to bottom of container",
+                "value": "bottom"
+            },
+            {
+                "name": "Align to bottom of the container element's font",
+                "value": "text-bottom"
+            },
+            {
+                "name": "Default value",
+                "value": "initial"
+            },
+            {
+                "name": "Inherit from parent",
+                "value": "inherit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+        "display": "Visibility",
+        "description": "Specifies whether or not an element is visible",
+        "link": "https://www.w3schools.com/cssref/pr_class_visibility.asp",
+        "propertyName": "visibility",
+        "valuetemplate": "{0}",
+        "categories": ["container"],
+        "tags": "container",
+        "controls": [
+          {
+            "type": "select",
+            "default": "visible",
+            "label": "Value",
+            "options": [
+              {
+                  "name": "Make element visible",
+                  "value": "visible"
+              },
+              {
+                  "name": "Make element hidden",
+                  "value": "hidden"
+              },
+              {
+                  "name": "Collapse table rows and columns",
+                  "value": "collapse"
+              },
+              {
+                  "name": "Default value",
+                  "value": "initial"
+              },
+              {
+                  "name": "Inherit from parent",
+                  "value": "inherit"
+              }
+            ]
+          }
+        ]
+    }
+]
