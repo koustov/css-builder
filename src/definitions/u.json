@@ -1,0 +1,86 @@
+[
+  {
+    "display": "Unicode Bidi",
+    "description": "Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document.",
+    "link": "https://www.w3schools.com/cssref/pr_text_unicode-bidi.asp",
+    "propertyName": "unicode-bidi",
+    "valuetemplate": "{0}",
+    "categories": ["Misc"],
+    "tags": "direction",
+    "controls": [
+      {
+        "type": "select",
+        "default": "normal",
+        "label": "Value",
+        "options": [
+          {
+            "name": "Normal",
+            "value": "normal"
+          },
+          {
+            "name": "Embed",
+            "value": "embed"
+          },
+          {
+            "name": "Override",
+            "value": "bidi-override"
+          },
+          {
+            "name": "isolate",
+            "value": "isolate"
+          },
+          {
+            "name": "Isolate Ooverride",
+            "value": "isolate-override"
+          },
+          {
+            "name": "Plaintext",
+            "value": "plaintext"
+          },
+          {
+            "name": "Default value",
+            "value": "initial"
+          },
+          {
+            "name": "Inherit from parent",
+            "value": "inherit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display": "User Select",
+    "description": "Specifies whether the text of an element can be selected.",
+    "link": "https://www.w3schools.com/cssref/css3_pr_user-select.asp",
+    "propertyName": "user-select",
+    "valuetemplate": "{0}",
+    "categories": ["Misc"],
+    "tags": "selection",
+    "controls": [
+      {
+        "type": "select",
+        "default": "auto",
+        "label": "Value",
+        "options": [
+          {
+            "name": "Automatic",
+            "value": "auto"
+          },
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Text",
+            "value": "text"
+          },
+          {
+            "name": "All",
+            "value": "all"
+          }
+        ]
+      }
+    ]
+  }
+]
